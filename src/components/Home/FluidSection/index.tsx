@@ -9,6 +9,7 @@ import './style.scss';
 import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
+import ShootingStar from '../../shared-components/ShootingStar';
 
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
@@ -16,6 +17,10 @@ export default function FluidSection(){
   return (
     <Section line={lineSVG}>
       <div className="fluid-section">
+        <ShootingStar
+          isVertical
+          left="100%"
+        />
         <SectionInfo
           {...info}
         />
