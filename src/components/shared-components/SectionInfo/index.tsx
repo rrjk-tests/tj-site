@@ -4,6 +4,8 @@ import StringSpanizy from '../../shared-components/StringSpanizy';
 
 import './style.scss';
 
+import glowSVG from './glow.svg';
+
 interface IProps {
   title?: string[],
   description?: string[],
@@ -13,6 +15,11 @@ interface IProps {
 export default function SectionInfo({ title = [], description = [], className = '' }: IProps){
   return (
     <div className={`section-info ${className}`}>
+      <img
+        className="section-info__glow"
+        src={glowSVG}
+        alt="glow"
+      />
       <h2 className="section-info__title">
         <StringSpanizy
           text={title}
