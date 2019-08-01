@@ -3,13 +3,13 @@ import React from 'react';
 import './style.scss';
 
 interface IProps {
-  isPrimary?: boolean,
-  outline?: boolean,
+  isSecondary?: boolean,
+  isOutline?: boolean,
   text: string,
-  onClick: () => void | null
+  onClick?: () => void | null
 }
 
-export default function Button({ isSecondary = true, isOutline = false, text = '', onClick = ()=>{} }){
+export default function Button({ isSecondary = true, isOutline = false, text = '', onClick = ()=>{} }: IProps){
   const outlineModifier = isOutline ? ' button--outline' : '';
   const secondaryModifier = isSecondary ? ' button--secondary' : '';
   return (
