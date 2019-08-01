@@ -5,12 +5,14 @@ import Line from './Line';
 
 interface IProps {
   line?: string,
-  children: React.ReactNode
+  children: React.ReactNode,
+  hasGlown?: boolean,
 }
 
-export default function Section({ line, children }: IProps) {
+export default function Section({ line, children, hasGlown = false }: IProps) {
+  const hasGlownClass = hasGlown ? ' section--glown' : ''
   return (
-    <section className="section">
+    <section className={`section${hasGlownClass}`}>
       <div className="section__layout">
         { children }
       </div>

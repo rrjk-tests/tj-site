@@ -11,6 +11,10 @@
 
   position: relative;
 
+  &--glown {
+    background-image: radial-gradient(circle at 50% -100%, #48a2f5, transparentize(#265b8b, 1) 70%);
+  }
+
   &__layout {
     width: $layout-width;
     flex: 1;
