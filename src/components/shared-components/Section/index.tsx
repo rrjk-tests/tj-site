@@ -3,7 +3,7 @@ import React, { ReactChildren } from 'react';
 import './style.scss';
 
 interface IProps {
-  line: string | null,
+  line?: string | null,
   children: ReactChildren
 }
 
