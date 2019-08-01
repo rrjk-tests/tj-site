@@ -10,9 +10,10 @@ interface IProps {
 }
 
 export default function Section({ line, children, hasGlown = false }: IProps) {
-  const hasGlownClass = hasGlown ? ' section--glown' : ''
+  const hasGlownModifier = hasGlown ? ' section--glown' : ''
+  const hasLineModifier = !line ? ' section--without-line' : '';
   return (
-    <section className={`section${hasGlownClass}`}>
+    <section className={`section${hasGlownModifier}${hasLineModifier}`}>
       <div className="section__layout">
         { children }
       </div>

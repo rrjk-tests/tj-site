@@ -1,0 +1,17 @@
+@import '../../../stylesheets/abstracts/index';
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__layout {
+    border-top: 0.3rem solid $text-color;
+
+    padding-top: 5rem;
+
+    max-width: $layout-width;
+    width: 100%;
+
+    display: flex;
+  }
+}

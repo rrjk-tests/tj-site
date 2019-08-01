@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
 
-  padding-bottom: 20rem;
+  padding-bottom: $global-padding * 20;
 
   position: relative;
 
@@ -16,6 +16,10 @@
 
   &--glown {
     background-image: radial-gradient(circle at 50% -100%, transparentize(#48a2f5, 0.3), transparentize(#265b8b, 1) 70%);
+  }
+
+  &--without-line {
+    padding-bottom: $global-padding * 8;
   }
 
   &__layout {
