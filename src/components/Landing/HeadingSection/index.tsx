@@ -12,6 +12,7 @@ export default function HeadingSection() {
         <img
           className="heading-section__logo"
           src={logo}
+          alt="TheatreJS logo"
         />
         <div className="heading-section__content">
           <h2 className="heading-section__title">
