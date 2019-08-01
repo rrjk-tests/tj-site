@@ -9,11 +9,15 @@ import SectionInfo from '../../shared-components/SectionInfo';
 
 import { sections } from '../../../locale/en';
 
+import lineSVG from './line.svg';
+
 const { info, button } = sections.heading;
 
 export default function HeadingSection() {
   return (
-    <Section>
+    <Section
+      line={lineSVG}
+    >
       <div className="heading-section">
         <img
           className="heading-section__logo"
