@@ -1,5 +1,5 @@
 import React from 'react'
-import Landing from './Landing'
+import Home from './Home'
 import { Helmet } from 'react-helmet'
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
                 <meta name="description" content="web-based animation tool" />
                 <meta name="keywords" content="animations,js,theatre" />
             </Helmet>
-            <Landing />
+            <Home />
         </React.Fragment>
     )
 };
