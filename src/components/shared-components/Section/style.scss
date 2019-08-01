@@ -6,10 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   padding-bottom: 20rem;
 
   position: relative;
+
+  padding-top: $global-margin * 5;
 
   &--glown {
     background-image: radial-gradient(circle at 50% -100%, transparentize(#48a2f5, 0.3), transparentize(#265b8b, 1) 70%);
@@ -17,7 +20,6 @@
 
   &__layout {
     width: $layout-width;
-    flex: 1;
   }
 
   &__line {
