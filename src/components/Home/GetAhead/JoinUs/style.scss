@@ -1,0 +1,23 @@
+@import '../../../../stylesheets/abstracts/index';
+
+.join-us {
+  margin-top: $global-margin * 4;
+
+  &__input {
+    height: 4.5rem;
+    border: none;
+    border-radius: $border-radius;
+    max-width: 30rem;
+    width: 100%;
+
+    padding: 0 $global-padding * 4 0 $global-padding * 2;
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    margin-left: -$global-margin * 4;
+  }
+}
