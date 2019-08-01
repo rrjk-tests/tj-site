@@ -15,10 +15,7 @@ const { info, button } = sections.heading;
 
 export default function HeadingSection() {
   return (
-    <Section
-      hasGlown
-      line={lineSVG}
-    >
+    <Section hasGlown line={lineSVG}>
       <div className="heading-section">
         <img
           className="heading-section__logo"

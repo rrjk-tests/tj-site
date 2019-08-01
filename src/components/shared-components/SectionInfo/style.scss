@@ -10,7 +10,12 @@
 
   &__glow {
     position: absolute;
-    transform: translate(-50%, -20%);
+    transform: translate(-30%, -30%);
+    pointer-events: none;
+
+    &--rtl {
+      transform: translate(30%, 30%);
+    }
   }
 
   &__title {
