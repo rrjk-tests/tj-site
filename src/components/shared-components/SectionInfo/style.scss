@@ -6,16 +6,19 @@
   &--rtl {
     text-align: right;
     align-items: flex-end;
+
+    .section-info {
+      &__glow {
+        left: 100%;
+        transform: translate(-55%, -35%);
+      }
+    }
   }
 
   &__glow {
     position: absolute;
     transform: translate(-30%, -30%);
     pointer-events: none;
-
-    &--rtl {
-      transform: translate(30%, 30%);
-    }
   }
 
   &__title {
