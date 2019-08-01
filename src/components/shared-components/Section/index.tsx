@@ -4,7 +4,7 @@ import './style.scss';
 
 interface IProps {
   line?: string | null,
-  children: ReactChildren
+  children: React.ReactNode
 }
 
 export default function Section({ line = null, children }: IProps) {
