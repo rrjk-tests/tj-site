@@ -1,0 +1,12 @@
+@import '../../../stylesheets/abstracts/index';
+
+.section-info {
+  &__title {
+    font-size: $heading-font-size;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: $global-margin 0;
+  }
+}
