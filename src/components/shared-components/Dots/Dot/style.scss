@@ -1,0 +1,24 @@
+@import '../../../../stylesheets/abstracts/index';
+
+.dot {
+  position: absolute;
+
+  z-index: 0;
+
+  width: 0.6rem;
+  height: 0.6rem;
+
+  background-color: $primary-color;
+
+  &--white {
+    background-color: $text-color;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+  }
+
+  &--tertiary {
+    background-color: $tertiary-color;
+  }
+}
