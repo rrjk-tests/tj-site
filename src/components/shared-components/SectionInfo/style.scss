@@ -9,4 +9,9 @@
 
     margin: $global-margin 0;
   }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
 }
