@@ -7,11 +7,8 @@
   flex-direction: row-reverse;
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
     max-width: 60rem;
+    align-items: flex-end;
 
     margin-top: $global-margin * 5;
   }

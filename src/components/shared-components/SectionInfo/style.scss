@@ -8,6 +8,8 @@
     align-items: flex-end;
 
     .section-info {
+      align-items: flex-end;
+
       &__glow {
         left: 100%;
         transform: translate(-55%, -35%);
