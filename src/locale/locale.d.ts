@@ -7,13 +7,11 @@ interface ISection {
     info: IInfo
     [key: string]: any
 }
-type TSections = {[key: string]: ISection}
 
 interface IFooterSection {
     title: string,
     description: string
 }
 
-interface ILocale {
-    sections: TSections
-}
+type TSections = {[key: string]: ISection}
+type TFooterSections = IFooterSection[]
