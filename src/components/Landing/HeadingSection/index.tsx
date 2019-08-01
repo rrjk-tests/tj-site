@@ -5,7 +5,7 @@ import Section from '../../shared-components/Section';
 
 import logo from './logo.svg';
 import './style.scss';
-import StringSpanizy from '../../shared-components/StringSpanizy';
+import SectionInfo from '../../shared-components/SectionInfo';
 
 interface IProps extends IInfo {
   button: string,
@@ -20,18 +20,10 @@ export default function HeadingSection({ title = [], description = [], button = 
           src={logo}
           alt="TheatreJS logo"
         />
-        <div className="heading-section__content">
-          <h2 className="heading-section__title">
-            <StringSpanizy
-              text={title}
-            />
-          </h2>
-          <p className="heading-section__desc">
-            <StringSpanizy
-              text={description}
-            />
-          </p>
-        </div>
+        <SectionInfo
+          title={title}
+          description={description}
+        />
         <div className="heading-section__action">
           <Button
             text={button}
