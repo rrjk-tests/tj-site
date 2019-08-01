@@ -1,0 +1,9 @@
+.shooting-star {
+  position: absolute;
+
+  transform: translate(-50%, 0);
+
+  &--vertical {
+    transform: translate(-50%, 0) rotate(-90deg);
+  }
+}
