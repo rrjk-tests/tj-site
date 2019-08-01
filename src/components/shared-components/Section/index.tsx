@@ -3,16 +3,16 @@ import React, { ReactChildren } from 'react';
 import './style.scss';
 
 interface IProps {
-  line?: string | null,
+  line?: string,
   children: React.ReactNode
 }
 
-export default function Section({ line = null, children }: IProps) {
+export default function Section({ line, children }: IProps) {
   return (
     <section className="section">
-      <div className="section__line">
+      { line ? <div className="section__line">
         { line }
-      </div>
+      </div> : null }
       <div className="section__layout">
         { children }
       </div>
