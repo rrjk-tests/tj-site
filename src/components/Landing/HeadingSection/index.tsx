@@ -7,11 +7,11 @@ import logo from './logo.svg';
 import './style.scss';
 import SectionInfo from '../../shared-components/SectionInfo';
 
-interface IProps extends IInfo {
-  button: string,
-}
+import { sections } from '../../../locale/en';
 
-export default function HeadingSection({ title = [], description = [], button = ''}: IProps) {
+const { info, button } = sections.heading;
+
+export default function HeadingSection() {
   return (
     <Section>
       <div className="heading-section">
@@ -22,8 +22,7 @@ export default function HeadingSection({ title = [], description = [], button = 
         />
         <SectionInfo
           className="heading-section__content"
-          title={title}
-          description={description}
+          {...info}
         />
         <div className="heading-section__action">
           <Button
