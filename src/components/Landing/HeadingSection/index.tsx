@@ -5,8 +5,13 @@ import Section from '../../shared-components/Section';
 
 import logo from './logo.svg';
 import './style.scss';
+import StringSpanizy from '../../shared-components/StringSpanizy';
 
-export default function HeadingSection() {
+interface IProps extends IInfo {
+  button: string,
+}
+
+export default function HeadingSection({ title = [], description = [], button = ''}: IProps) {
   return (
     <Section>
       <div className="heading-section">
@@ -17,18 +22,19 @@ export default function HeadingSection() {
         />
         <div className="heading-section__content">
           <h2 className="heading-section__title">
-            <span>Artistry</span>
-            <span>
-              done easily
-            </span>
+            <StringSpanizy
+              text={title}
+            />
           </h2>
           <p className="heading-section__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <StringSpanizy
+              text={description}
+            />
           </p>
         </div>
         <div className="heading-section__action">
           <Button
-            text="Join the beta"
+            text={button}
           />
         </div>
       </div>
