@@ -9,6 +9,7 @@ import SectionInfo from '../../shared-components/SectionInfo';
 import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
+import Dots from '../../shared-components/Dots';
 
 const { info } = sections.easyAnimation;
 
@@ -16,6 +17,7 @@ export default function EasyAnimationSection() {
   return (
     <Section line={lineSVG}>
       <div className="easy-animation-section">
+        <Dots number={3} />
         <SectionInfo
           isRTL
           className="easy-animation-section__content"

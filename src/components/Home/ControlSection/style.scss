@@ -1,6 +1,7 @@
 @import '../../../stylesheets/abstracts/index';
 
 .control-section {
+  position: relative;
   padding-top: $global-padding * 0;
 
   display: flex;

@@ -1,6 +1,7 @@
 @import '../../../stylesheets/abstracts/index';
 
 .easy-animation-section {
+  position: relative;
   padding-top: $global-padding * 0;
 
   display: flex;
