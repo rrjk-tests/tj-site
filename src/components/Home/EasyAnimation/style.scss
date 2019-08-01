@@ -1,0 +1,19 @@
+@import '../../../stylesheets/abstracts/index';
+
+.easy-animation-section {
+  padding-top: $global-padding * 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  &__content {
+    max-width: 60rem;
+    align-items: flex-end;
+
+    margin-top: $global-margin * 5;
+  }
+
+  &__action {
+    margin-top: $global-margin;
+  }
+}

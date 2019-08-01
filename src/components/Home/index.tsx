@@ -6,6 +6,7 @@ import HeadingSection from './HeadingSection';
 import ControlSection from './ControlSection';
 import FluidSection from './FluidSection';
 import GetAhead from './GetAhead';
+import EasyAnimation from './EasyAnimation';
 
 export default function App(){
     return (
@@ -13,6 +14,7 @@ export default function App(){
             <HeadingSection />
             <ControlSection />
             <FluidSection />
+            <EasyAnimation />
             <GetAhead />
         </div>
     );
