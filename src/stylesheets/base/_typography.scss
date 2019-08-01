@@ -11,6 +11,12 @@ body {
   font-family: $text-font-family;
 }
 
+button, input {
+  font-family: $text-font-family;
+
+  font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   
