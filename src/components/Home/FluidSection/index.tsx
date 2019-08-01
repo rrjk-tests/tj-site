@@ -8,11 +8,13 @@ import './style.scss';
 
 import { sections } from '../../../locale/en';
 
+import lineSVG from './line.svg';
+
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
 export default function FluidSection(){
   return (
-    <Section>
+    <Section line={lineSVG}>
       <div className="fluid-section">
         <SectionInfo
           {...info}
