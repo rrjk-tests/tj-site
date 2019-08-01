@@ -3,7 +3,8 @@ export const sections: TSections = {
         info: {
             title: ['Artistry', 'done easily'],
             description: ['A Google Docs scam that appears to be widespread began landing in users’ inboxes on Wednesday in what seemed to be a sophisticated.']
-        }
+        },
+        button: 'Join the beta'
     },
     control: {
         info: {
