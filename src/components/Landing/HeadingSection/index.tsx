@@ -21,6 +21,7 @@ export default function HeadingSection({ title = [], description = [], button = 
           alt="TheatreJS logo"
         />
         <SectionInfo
+          className="heading-section__content"
           title={title}
           description={description}
         />

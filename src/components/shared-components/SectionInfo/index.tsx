@@ -7,17 +7,18 @@ import './style.scss';
 interface IProps {
   title?: string[],
   description?: string[],
+  className?: string,
 }
 
-export default function SectionInfo({ title = [], description = [] }: IProps){
+export default function SectionInfo({ title = [], description = [], className = '' }: IProps){
   return (
-    <div className="heading-section__content">
-      <h2 className="heading-section__title">
+    <div className={`section-info ${className}`}>
+      <h2 className="section-info__title">
         <StringSpanizy
           text={title}
         />
       </h2>
-      <p className="heading-section__desc">
+      <p className="section-info__desc">
         <StringSpanizy
           text={description}
         />
