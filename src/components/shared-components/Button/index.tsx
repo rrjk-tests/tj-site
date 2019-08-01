@@ -9,14 +9,19 @@ interface IProps {
   onClick?: () => void | null,
   type?: "button" | "submit",
   className?: string,
+  color?: string,
 }
 
-export default function Button({ isSecondary = true, isOutline = false, text = '', type = 'button', className, onClick = ()=>{} }: IProps){
+export default function Button({ isSecondary = false, isOutline = false, text = '', type = 'button', className, color, onClick = ()=>{} }: IProps){
+  let customStyle = {};
+  if(isOutline && color) customStyle = { borderColor: color };
+  if(!isOutline && color) customStyle = { backgroundColor: color };
   const outlineModifier = isOutline ? ' button--outline' : '';
   const secondaryModifier = isSecondary ? ' button--secondary' : '';
   return (
     <button
-      className={`button${outlineModifier}${secondaryModifier} ${className}`}
+      style={customStyle}
+      className={`button${outlineModifier}${secondaryModifier} ${className ? className : ''}`}
       onClick={onClick}
       type={type}
     >

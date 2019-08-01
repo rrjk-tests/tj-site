@@ -1,6 +1,8 @@
 @import '../../../stylesheets/abstracts/index';
 
 .button {
+  $btn: button;
+
   padding: $global-padding * 1.5 $global-padding * 3;
 
   border-radius: $border-radius;
@@ -12,26 +14,23 @@
 
   color: $text-color;
 
-  border: 0;
+  border-width: 0;
 
   cursor: pointer;
   transition-duration: $transition-duration;
 
   &:hover {
-    background-color: darken($primary-color, 10);
+    opacity: 0.6;
   }
 
-  &__secondary {
+  &--secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
-
-    &:hover {
-      background-color: darken($secondary-color, 10);
-    }
   }
 
-  &__outline {
-    border: 0.1rem solid;
+  &--outline {
+    border-width: 0.2rem;
+    border-style: solid;
     background-color: transparent;
   }
 }

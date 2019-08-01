@@ -25,9 +25,13 @@ export default function FluidSection(){
           />
           <Button
             text={hoverMe}
+            isSecondary
+            isOutline
           />
           <Button
             text={selectMe}
+            color="#45AAF1"
+            isOutline
           />
         </div>
       </div>
