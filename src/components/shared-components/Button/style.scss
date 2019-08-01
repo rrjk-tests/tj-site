@@ -1,0 +1,35 @@
+@import '../../../stylesheets/abstracts/index';
+
+.button {
+  padding: $global-padding * 1.5 $global-padding * 3;
+
+  border-radius: $border-radius;
+
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  font-weight: bold;
+
+  color: $text-color;
+
+  cursor: pointer;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    background-color: darken($primary-color, 10);
+  }
+
+  &__secondary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10);
+    }
+  }
+
+  &__outline {
+    border: 0.1rem solid;
+    background-color: transparent;
+  }
+}
