@@ -5,6 +5,7 @@ import './style.scss';
 import HeadingSection from './HeadingSection';
 import ControlSection from './ControlSection';
 import FluidSection from './FluidSection';
+import GetAhead from './GetAhead';
 
 export default function App(){
     return (
@@ -12,6 +13,7 @@ export default function App(){
             <HeadingSection />
             <ControlSection />
             <FluidSection />
+            <GetAhead />
         </div>
     );
 }
