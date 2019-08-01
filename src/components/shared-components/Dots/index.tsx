@@ -12,7 +12,8 @@ export default function Dots({ number = 0 }:IProps){
     const left = `${Math.random() * 100}%`;
     const top = `${Math.random() * 100}%`;
     const type = colors[Math.round(Math.random() * 3)];
-    dots.push(<Dot left={left} top={top} type={type} />);
+    const key = `${type}${left}${top}`;
+    dots.push(<Dot key={key} left={left} top={top} type={type} />);
   }
 
   return (
