@@ -2,7 +2,12 @@
   width: 100%;
   min-height: 40rem;
 
-  padding-top: 10rem;
+  &__line {
+    max-height: 10rem;
+  }
 
-  position: relative;
+  &__layout {
+    width: $layout-width;
+    margin: auto;
+  }
 }
