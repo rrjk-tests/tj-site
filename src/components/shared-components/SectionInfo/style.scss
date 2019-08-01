@@ -3,12 +3,16 @@
 .section-info {
   position: relative;
 
+  &--rtl {
+    text-align: right;
+    align-items: flex-end;
+  }
+
   &__glow {
     position: absolute;
     transform: translate(-50%, -20%);
-    // top: 50%;
-    // left: 50%;
   }
+
   &__title {
     font-size: $heading-font-size;
 

@@ -10,11 +10,13 @@ interface IProps {
   title?: string[],
   description?: string[],
   className?: string,
+  isRTL?: boolean,
 }
 
-export default function SectionInfo({ title = [], description = [], className = '' }: IProps){
+export default function SectionInfo({ title = [], description = [], className = '', isRTL = true }: IProps){
+  const RTLModifier = isRTL ? ' section-info--rtl' : ''
   return (
-    <div className={`section-info ${className}`}>
+    <div className={`section-info${RTLModifier} ${className}`}>
       <img
         className="section-info__glow"
         src={glowSVG}
