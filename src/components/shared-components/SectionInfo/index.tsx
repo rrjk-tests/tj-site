@@ -13,7 +13,7 @@ interface IProps {
   isRTL?: boolean,
 }
 
-export default function SectionInfo({ title = [], description = [], className = '', isRTL = true }: IProps){
+export default function SectionInfo({ title = [], description = [], className = '', isRTL = false }: IProps){
   const RTLModifier = isRTL ? ' section-info--rtl' : ''
   return (
     <div className={`section-info${RTLModifier} ${className}`}>
