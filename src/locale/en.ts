@@ -15,7 +15,7 @@ export const sections: TSections = {
     fluid: {
         info: {
             title: ['Fluid animation'],
-            description: ['A vision statement is a company\'s road map, indicating what the company wants to become by setting a defined direction for the company\'s growth.']
+            description: ['A vision statement is a company\'s road map, indicating', 'what the company wants to become by setting a defined', 'direction for the company\'s growth.']
         },
         buttons: {
             clickMe: 'Click me',
