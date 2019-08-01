@@ -1,6 +1,8 @@
 interface ISection {
-    title: string[],
-    description: string[]
+    info: {
+        title: string[],
+        description: string[]
+    }
 }
 type TSections = {[key: string]: ISection}
 
