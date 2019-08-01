@@ -44,19 +44,19 @@ export const sections: TSections = {
 
 export const footerSections: TFooterSections = [
     {
-        title: 'Title Here',
+        title: 'Title Here1',
         description: 'The reason why businesses make use of mission statements is to make it.'
     },
     {
-        title: 'Title Here',
+        title: 'Title Here2',
         description: 'The reason why businesses make use of mission statements is to make it.'
     },
     {
-        title: 'Title Here',
+        title: 'Title Here3',
         description: 'The reason why businesses make use of mission statements is to make it.'
     },
     {
-        title: 'Title Here',
+        title: 'Title Here4',
         description: 'The reason why businesses make use of mission statements is to make it.'
     },
 ]
