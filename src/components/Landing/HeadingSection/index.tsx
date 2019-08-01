@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../../shared-components/Button';
 import Section from '../../shared-components/Section';
 
 import logo from './logo.svg';
@@ -24,6 +25,11 @@ export default function HeadingSection() {
           <p className="heading-section__desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+        </div>
+        <div className="heading-section__action">
+          <Button
+            text="Join the beta"
+          />
         </div>
       </div>
     </Section>
