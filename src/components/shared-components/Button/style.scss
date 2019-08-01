@@ -15,6 +15,9 @@
   color: $text-color;
 
   border-width: 0;
+  box-sizing: border-box;
+
+  min-width: 17.5rem;
 
   cursor: pointer;
   transition-duration: $transition-duration;
