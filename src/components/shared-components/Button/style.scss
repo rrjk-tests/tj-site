@@ -24,7 +24,7 @@
 
   cursor: pointer;
   transition-duration: $transition-duration;
-  box-shadow: 0 4px 10px transparentize($primary-color, 0.6);
+  box-shadow: 0 .4rem 1rem transparentize($primary-color, 0.6);
 
   &:focus, &:active {
     outline: none;
@@ -51,10 +51,16 @@
     }
   }
 
+  &--tertiary {
+    background-color: $tertiary-color;
+    border-color: $tertiary-color;
+    box-shadow: 0 .4rem 1rem transparentize($tertiary-color, 0.6);
+  }
+
   &--secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
-    box-shadow: 0 4px 10px transparentize($secondary-color, 0.6);
+    box-shadow: 0 .4rem 1rem transparentize($secondary-color, 0.6);
   }
 
   &--outline {
