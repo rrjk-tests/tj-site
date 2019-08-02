@@ -1,5 +1,9 @@
+@import '../../stylesheets/main.scss';
+
 .scrollbar {
     &__thumb-vertical {
-        background: white;
+        background: linear-gradient($primary-color, $primary-color-shadow);
+        opacity: 0.7;
+        border-radius: 10px;
     }
 }
