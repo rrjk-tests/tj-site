@@ -8,7 +8,6 @@ import './style.scss';
 
 import { sections } from '../../../locale/en';
 import ShootingStar from '../../shared-components/ShootingStar';
-import Dots from '../../shared-components/Dots';
 import Dot from '../../shared-components/Dot';
 
 const { getAhead: { info } } = sections;
