@@ -24,7 +24,10 @@ export default function controlSection() {
           {...info}
         />
         <div className="control-section__control-box">
-          <ControlBox />
+          <ControlBox points={[
+            {x: 10, y: 10},
+            {x: 100, y: 30},
+          ]} />
         </div>
       </div>
     </Section>

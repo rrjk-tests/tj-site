@@ -9455,6 +9455,11 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
+svg-path-generator@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/svg-path-generator/-/svg-path-generator-1.1.0.tgz#058ad4a095eabbc5e2e91b66299e5063e4ac9afb"
+  integrity sha1-BYrUoJXqu8Xi6RtmKZ5QY+Ssmvs=
+
 svgo@^1.0.0, svgo@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.2.tgz#0253d34eccf2aed4ad4f283e11ee75198f9d7316"
