@@ -14,6 +14,8 @@
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-device-detect": "^1.7.5",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^3.21.5",
