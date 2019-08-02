@@ -9,14 +9,14 @@ interface IProps {
 }
 
 export default function Dot({ type = 'primary', left = "0px", top = "0px" }: IProps){
-  const isSecondayModifier = type === 'secondary' ? ' dot--secondary' : '';
+  const isSecondaryModifier = type === 'secondary' ? ' dot--secondary' : '';
   const isTertiaryModifier = type === 'tertiary' ? ' dot--tertiary' : '';
   const isWhiteModifier = type === 'white' ? ' dot--white' : '';
   const customStyles = { left, top };
   return (
     <div
       style={customStyles}
-      className={`dot${isSecondayModifier}${isTertiaryModifier}${isWhiteModifier}`}
+      className={`dot${isSecondaryModifier}${isTertiaryModifier}${isWhiteModifier}`}
     />
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Button from '../../shared-components/Button';
 import Section from '../../shared-components/Section';
 
 import './style.scss';
