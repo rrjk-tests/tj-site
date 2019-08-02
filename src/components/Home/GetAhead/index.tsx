@@ -9,6 +9,7 @@ import './style.scss';
 import { sections } from '../../../locale/en';
 import ShootingStar from '../../shared-components/ShootingStar';
 import Dots from '../../shared-components/Dots';
+import Dot from '../../shared-components/Dot';
 
 const { getAhead: { info } } = sections;
 
@@ -16,7 +17,7 @@ export default function GetAhead(){
   return (
     <Section>
       <div className="get-ahead">
-        <Dots number={3} />
+        <Dot top="24rem" left="53rem" />
         <ShootingStar
           isVertical
           left="100%"
