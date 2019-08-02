@@ -8,7 +8,7 @@ import SectionInfo from '../../shared-components/SectionInfo';
 import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
-import Dots from '../../shared-components/Dots';
+import Dot from '../../shared-components/Dot';
 
 const { info } = sections.control;
 
@@ -16,7 +16,7 @@ export default function controlSection() {
   return (
     <Section line={lineSVG}>
       <div className="control-section">
-        <Dots number={3} />
+        <Dot top="5rem" left="30%" />
         <SectionInfo
           isRTL
           className="control-section__content"
