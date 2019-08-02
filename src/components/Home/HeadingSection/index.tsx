@@ -19,8 +19,8 @@ export default function HeadingSection() {
   return (
     <Section hasGlown line={lineSVG}>
       <div className="heading-section">
-        <Dot top="9rem" type="secondary" left="11rem" />
-        <Dot top="38rem" type="secondary" left="20rem" />
+        <Dot top="9rem" left="11rem" />
+        <Dot top="38rem" left="20rem" />
         <ShootingStar
           top="0px"
           left="100%"
