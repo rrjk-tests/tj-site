@@ -29,6 +29,10 @@
   &__line {
     bottom: 0;
     position: absolute;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
 
     z-index: 0;
   }
