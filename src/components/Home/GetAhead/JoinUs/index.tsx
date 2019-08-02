@@ -22,11 +22,12 @@ export default function JoinUs(){
     });
   }
 
+  const loadingModifier = loading ? ' join-us--loading' : '';
   const buttonText = data ? 'Thanks for subscribing' : button;
   const isDisabled = Boolean(data);
   
   return (
-    <div className="join-us">
+    <div className={`join-us${loadingModifier}`}>
       <form onSubmit={handleSubmit(afterSubmit)} className="join-us__form">
         <input
           className="join-us__input"

@@ -20,6 +20,10 @@
     }
   }
 
+  &--loading {
+    opacity: 0.8;
+  }
+
   &__button {
     margin-left: -$global-margin * 4;
   }
