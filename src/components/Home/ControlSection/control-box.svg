@@ -1,5 +1,18 @@
 <svg width="267" height="226" viewBox="0 0 267 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        /* <![CDATA[ */
+        #seeker {
+            animation: seek 1.5s linear infinite;
+        }
+        @keyframes seek {
+            from { transform: translate(-10px, 0); }
+            to { transform: translate(250px, 0); }
+        }
+        /* ]]> */
+    </style>
     <rect x="1" y="7" width="265" height="218" fill="#0A0A0A" stroke="#930077" stroke-width="2" />
-    <rect x="9" width="9" height="13" fill="#72005C" />
-    <rect x="13" y="13" width="1" height="213" fill="#72005C" />
+    <g id="seeker">
+        <rect x="9" width="9" height="13" fill="#72005C" />
+        <rect x="13" y="13" width="1" height="213" fill="#72005C" />
+    </g>
 </svg>

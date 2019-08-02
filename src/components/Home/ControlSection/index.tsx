@@ -18,7 +18,7 @@ export default function controlSection() {
   return (
     <Section line={lineSVG}>
       <div className="control-section">
-        <Dot top="5rem" left="30%" />
+        <Dot top="-2rem" left="35%" />
         <SectionInfo
           isRTL
           className="control-section__content"
