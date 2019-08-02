@@ -4,6 +4,7 @@
   &__form {
     margin-top: $global-margin * 4;
     display: flex;
+    position: relative;
   }
 
   &__input {
@@ -31,5 +32,11 @@
   &__error {
     padding: $global-padding $global-padding * 1.5;
     color: $primary-color;
+    position: absolute;
+    bottom: -4rem;
+    left: .5rem;
+    font-size: 1.3rem;
+    text-shadow: 0 0 3px;
+    letter-spacing: 0.04rem;
   }
 }
