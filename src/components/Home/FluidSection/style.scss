@@ -6,6 +6,8 @@
   justify-content: space-between;
 
   &__actions {
+    position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;

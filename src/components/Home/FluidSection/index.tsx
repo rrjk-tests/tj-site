@@ -10,7 +10,7 @@ import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
 import ShootingStar from '../../shared-components/ShootingStar';
-import Dots from '../../shared-components/Dots';
+import Dot from '../../shared-components/Dot';
 
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
@@ -18,7 +18,6 @@ export default function FluidSection(){
   return (
     <Section line={lineSVG}>
       <div className="fluid-section">
-        <Dots number={4} />
         <ShootingStar
           isVertical
           left="100%"
@@ -27,6 +26,8 @@ export default function FluidSection(){
           {...info}
         />
         <div className="fluid-section__actions">
+          <Dot top="6rem" type="white" left="50%" />
+          <Dot top="13.5rem" left="50%" />
           <Button
             text={clickMe}
           />
