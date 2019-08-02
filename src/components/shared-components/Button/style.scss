@@ -3,7 +3,10 @@
 .button {
   $btn: button;
 
-  padding: $global-padding * 1.5 $global-padding * 3;
+  box-sizing: border-box;
+  height: 5rem;
+  
+  padding: 0 $global-padding * 2;
 
   border-radius: $border-radius;
 
@@ -29,6 +32,26 @@
 
   &:hover {
     opacity: 0.9;
+  }
+
+  &--loading {
+    cursor: wait;
+    width: 5rem;
+    min-width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &--secondary {
