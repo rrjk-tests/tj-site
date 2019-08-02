@@ -1,0 +1,18 @@
+.ControlBox {
+    width: 267px;
+    height: 220px;
+    position: relative;
+    top: 30px;
+
+    &__box {
+        position: absolute;
+        top: -6px;
+        left: 0;
+    }
+
+    &__cursor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
