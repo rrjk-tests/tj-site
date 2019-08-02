@@ -1,10 +1,13 @@
 @import '../../../../stylesheets/abstracts/index';
 
 .join-us {
-  margin-top: $global-margin * 4;
+  &__form {
+    margin-top: $global-margin * 4;
+    display: flex;
+  }
 
   &__input {
-    height: 4.5rem;
+    height: 5rem;
     border: none;
     border-radius: $border-radius;
     max-width: 30rem;
@@ -19,5 +22,10 @@
 
   &__button {
     margin-left: -$global-margin * 4;
+  }
+
+  &__error {
+    padding: $global-padding $global-padding * 1.5;
+    color: $primary-color;
   }
 }
