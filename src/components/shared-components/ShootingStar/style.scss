@@ -1,5 +1,9 @@
 .shooting-star {
   position: absolute;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
 
   transform: translate(-50%, 0);
 
