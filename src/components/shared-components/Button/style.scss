@@ -21,7 +21,8 @@
 
   cursor: pointer;
   transition-duration: $transition-duration;
-  box-shadow: 0 4px 7px transparentize($primary-color, 0.6);
+
+  box-shadow: 0 .4rem .7rem transparentize($primary-color, 0.6);
 
   &:focus, &:active {
     outline: none;
@@ -52,33 +53,33 @@
       $darken-color: darken($primary-color, 10%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 4px 10px transparentize($darken-color, 0.3);
+      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.3);
     }
   }
 
   &--secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
-    box-shadow: 0 4px 7px transparentize($secondary-color, 0.6);
+    box-shadow: 0 .4rem .7rem transparentize($secondary-color, 0.6);
 
     &:hover {
       $darken-color: darken($secondary-color, 5%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 4px 10px transparentize($darken-color, 0.5);
+      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 
   &--tertiary {
     background-color: $tertiary-color;
     border-color: $tertiary-color;
-    box-shadow: 0 4px 7px transparentize($tertiary-color, 0.6);
+    box-shadow: 0 .4rem .7rem transparentize($tertiary-color, 0.6);
 
     &:hover {
       $darken-color: darken($tertiary-color, 15%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 4px 10px transparentize($darken-color, 0.5);
+      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 
