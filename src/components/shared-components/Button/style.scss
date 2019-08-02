@@ -21,6 +21,7 @@
 
   cursor: pointer;
   transition-duration: $transition-duration;
+  box-shadow: 0 4px 10px transparentize($primary-color, 0.6);
 
   &:focus, &:active {
     outline: none;
@@ -33,6 +34,7 @@
   &--secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
+    box-shadow: 0 4px 10px transparentize($secondary-color, 0.6);
   }
 
   &--outline {

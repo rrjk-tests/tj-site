@@ -3,8 +3,8 @@ import React from 'react';
 import './style.scss';
 
 interface IProps {
-  isSecondary?: boolean,
-  isOutline?: boolean,
+  styleType?: 'primary' | 'secondary' | 'tertiary',
+  hasOutline?: boolean,
   text: string,
   onClick?: () => void | null,
   type?: "button" | "submit",
@@ -12,16 +12,16 @@ interface IProps {
   color?: string,
 }
 
-export default function Button({ isSecondary = false, isOutline = false, text = '', type = 'button', className, color, onClick = ()=>{} }: IProps){
+export default function Button({ styleType = 'primary', hasOutline = false, text = '', type = 'button', className, color, onClick = ()=>{} }: IProps){
   let customStyle = {};
-  if(isOutline && color) customStyle = { borderColor: color };
-  if(!isOutline && color) customStyle = { backgroundColor: color };
-  const outlineModifier = isOutline ? ' button--outline' : '';
-  const secondaryModifier = isSecondary ? ' button--secondary' : '';
+  if(hasOutline && color) customStyle = { borderColor: color };
+  if(!hasOutline && color) customStyle = { backgroundColor: color };
+  const outlineModifier = hasOutline ? ' button--outline' : '';
+  const styleModifier = ` button--${styleType}`;
   return (
     <button
       style={customStyle}
-      className={`button${outlineModifier}${secondaryModifier} ${className ? className : ''}`}
+      className={`button${outlineModifier}${styleModifier} ${className ? className : ''}`}
       onClick={onClick}
       type={type}
     >

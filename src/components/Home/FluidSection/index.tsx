@@ -31,14 +31,14 @@ export default function FluidSection(){
             text={clickMe}
           />
           <Button
+            styleType="secondary"
             text={hoverMe}
-            isSecondary
-            isOutline
+            hasOutline
           />
           <Button
             text={selectMe}
-            color="#45AAF1"
-            isOutline
+            styleType="tertiary"
+            hasOutline
           />
         </div>
       </div>
