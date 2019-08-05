@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTheatre } from '@theatre/hooks'
 
 import Section from '../../shared-components/Section';

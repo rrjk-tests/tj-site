@@ -5,13 +5,13 @@ import './style.scss';
 import shootingStarSVG from './shooting-star.svg';
 
 interface IProps {
-  left?: string,
-  top?: string,
+  right?: number,
+  top?: number,
   isVertical?: boolean,
 }
 
-export default function ShootingStar({ left = '0px', top = '0px', isVertical = false }: IProps){
-  const customStyles = { top, left }
+export default function ShootingStar({ right = 0, top = 0, isVertical = false }: IProps){
+  const customStyles = { top, right }
   const isVerticalModifier = isVertical ? ' shooting-star--vertical' : '';
   return (
     <div

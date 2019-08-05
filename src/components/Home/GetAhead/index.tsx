@@ -19,7 +19,7 @@ export default function GetAhead(){
         <Dot top="24rem" left="53rem" />
         <ShootingStar
           isVertical
-          left="100%"
+          right={0}
         />
         <SectionInfo
           {...info}

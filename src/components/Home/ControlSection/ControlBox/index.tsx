@@ -26,15 +26,15 @@ const timeToX = (time: number) => { return (time / 1500) * 226 }
 const valueToY = (value: number) => { return value + 110 }
 
 const getPoints = (keyframes: IKeyframe[]) => {
-    const elements = []
-    for (const keyframe of keyframes) {
+    return keyframes.map((keyframe: IKeyframe, index: number) => {
         const x = timeToX(keyframe.time) + (keyframe.biasInX || 0);
         const y = valueToY(keyframe.value) + (keyframe.biasInY || 0);
-        elements.push(<g key={keyframe.time} style={{ transform: `translate(${x}px, ${y}px)` }}>
-            <rect className="ControlBox__keyframe" x="0" y="0" width="12" height="12" transform="rotate(-45)"/>
-        </g>)
-    }
-    return elements
+        return (
+            <g key={index} style={{transform: `translate(${x}px, ${y}px)`}}>
+                <rect className="ControlBox__keyframe" width="12" height="12" transform="rotate(-45)"/>
+            </g>
+        )
+    })
 }
 
 const generatePath = (keyframes: IKeyframe[]) => {

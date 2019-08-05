@@ -20,7 +20,7 @@ export default function FluidSection(){
       <div className="fluid-section">
         <ShootingStar
           isVertical
-          left="100%"
+          right={0}
         />
         <SectionInfo
           {...info}

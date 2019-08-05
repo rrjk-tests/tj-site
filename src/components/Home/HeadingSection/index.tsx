@@ -22,8 +22,7 @@ export default function HeadingSection() {
         <Dot top="9rem" left="11rem" />
         <Dot top="38rem" left="20rem" />
         <ShootingStar
-          top="0px"
-          left="100%"
+          right={-70}
         />
         <img
           className="heading-section__logo"
