@@ -9,6 +9,7 @@ import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
 import Dot from '../../shared-components/Dot';
+import BouncingBall from './BouncingBall';
 
 const { info } = sections.easyAnimation;
 
@@ -23,6 +24,7 @@ export default function EasyAnimationSection() {
           className="easy-animation-section__content"
           {...info}
         />
+        <BouncingBall />
       </div>
     </Section>
   );
