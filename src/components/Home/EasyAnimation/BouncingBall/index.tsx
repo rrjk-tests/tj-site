@@ -12,7 +12,7 @@ const secondaryLightColor = new Color(0xA61B66);
 
 const camera = new PerspectiveCamera(75, 1, 0.1, 1000)
 camera.position.z = 6;
-camera.position.x = 0;
+camera.position.y = -0.3;
 
 interface IBallProps {
     name: string
@@ -70,13 +70,11 @@ function Light({ name, color }: ILightProps) {
 export default function BouncingBall () {
     const scroll = useContext(ScrollContext)
 
-    console.log(scroll)
-
     return (
         <div className="BouncingBall">
             <Canvas camera={camera}>
                 <group
-                    rotation={new Euler(0.01, Math.PI/3, 0)}
+                    rotation={new Euler(0.01, (scroll / 1000 * Math.PI), 0)}
                 >
                     <Ball name="Ball" radius={1} />
                     <Floor width={4} height={4} />

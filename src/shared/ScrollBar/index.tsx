@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react'
+import React, { createContext } from 'react'
 import { Scrollbars } from 'react-custom-scrollbars';
  
 import './style.scss'
