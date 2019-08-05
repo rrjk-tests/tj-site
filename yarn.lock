@@ -1200,6 +1200,11 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
+"@theatre/hooks@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@theatre/hooks/-/hooks-0.3.2.tgz#9cc17adc365611368b4d4faf29045403e6cca6f6"
+  integrity sha512-20wH2uH1JekZwJhfUEPany0wLIIrjLGdtvzPAynrVRhlT0WArMEpziA2xNO6IoRZnV5edBj8XuGh2OZjiS1rtw==
+
 "@types/babel__core@^7.1.0":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.1.tgz#ce9a9e5d92b7031421e1d0d74ae59f572ba48be6"
