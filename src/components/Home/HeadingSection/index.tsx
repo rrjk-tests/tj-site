@@ -24,6 +24,10 @@ export default function HeadingSection() {
         <ShootingStar
           right={-70}
         />
+        <ShootingStar
+          isReversed
+          left={72}
+        />
         <img
           className="heading-section__logo"
           src={logo}
