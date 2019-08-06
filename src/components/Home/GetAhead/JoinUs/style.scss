@@ -1,6 +1,8 @@
 @import '../../../../stylesheets/abstracts/index';
 
 .join-us {
+  width: 100%;
+  max-width: 50rem;
   &__form {
     margin-top: $global-margin * 4;
     display: flex;

@@ -4,24 +4,17 @@ import StringSpanizy from '../../shared-components/StringSpanizy';
 
 import './style.scss';
 
-import glowSVG from './glow.svg';
-
 interface IProps {
   title?: string[],
   description?: string[],
   className?: string,
-  isRTL?: boolean,
+  direction?: 'rtl' | 'ltr' | 'center',
 }
 
-export default function SectionInfo({ title = [], description = [], className = '', isRTL = false }: IProps){
-  const RTLModifier = isRTL ? ' section-info--rtl' : ''
+export default function SectionInfo({ title = [], description = [], className = '', direction = 'ltr' }: IProps){
+  const directionModifier = `section-info--${direction}`;
   return (
-    <div className={`section-info${RTLModifier} ${className}`}>
-      <img
-        className="section-info__glow"
-        src={glowSVG}
-        alt="glow"
-      />
+    <div className={`section-info ${directionModifier} ${className}`}>
       <h2 className="section-info__title">
         <StringSpanizy
           text={title}

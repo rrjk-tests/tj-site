@@ -20,25 +20,24 @@ export default function FluidSection(){
       <div className="fluid-section">
         <ShootingStar
           isVertical
-          right={0}
+          right={-135}
+          top={62}
         />
         <SectionInfo
           {...info}
         />
         <div className="fluid-section__actions">
-          <Dot top="6rem" type="white" left="50%" />
-          <Dot top="13.5rem" left="50%" />
+          <Dot top="6.5rem" type="tertiary" left="50%" />
+          <Dot top="14.5rem" type="tertiary" left="50%" />
           <Button
             text={clickMe}
           />
           <Button
-            styleType="secondary"
             text={hoverMe}
             hasOutline
           />
           <Button
             text={selectMe}
-            styleType="tertiary"
             hasOutline
           />
         </div>
