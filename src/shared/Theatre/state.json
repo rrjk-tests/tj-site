@@ -1,198 +1,274 @@
 {
-    "revision": "e3b162ea-eb2b-4d7d-8f2a-88f61eb99c79",
-    "definitionVersion": "0.1.0",
-    "projectState": {
-      "timelineTemplates": {
-        "Control Box": {
-          "objects": {
-            "Keyframe 1": {
-              "props": {
-                "time": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 0
-                  }
-                }
-              }
-            },
-            "Keyframe One": {
-              "props": {
-                "value": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": -45
-                  }
-                },
-                "time": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 578
-                  }
-                }
-              }
-            },
-            "Keyframe Two": {
-              "props": {
-                "time": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 1229
-                  }
-                },
-                "value": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 51
-                  }
-                }
-              }
-            },
-            "Cursor": {
-              "props": {
-                "x": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 55
-                  }
-                },
-                "y": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": -40
-                  }
-                }
-              }
-            },
-            "cursor": {
-              "props": {
-                "x": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 151
-                  }
-                },
-                "y": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 59
-                  }
+  "revision": "e70d19eb-9d51-40e2-a6f5-d165227605d0",
+  "definitionVersion": "0.1.0",
+  "projectState": {
+    "timelineTemplates": {
+      "Control Box": {
+        "objects": {
+          "Keyframe 1": {
+            "props": {
+              "time": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 0
                 }
               }
             }
           },
-          "duration": null
+          "Keyframe One": {
+            "props": {
+              "value": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": -45
+                }
+              },
+              "time": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 578
+                }
+              }
+            }
+          },
+          "Keyframe Two": {
+            "props": {
+              "time": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 1229
+                }
+              },
+              "value": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 51
+                }
+              }
+            }
+          },
+          "Cursor": {
+            "props": {
+              "x": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 55
+                }
+              },
+              "y": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": -40
+                }
+              }
+            }
+          },
+          "cursor": {
+            "props": {
+              "x": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 151
+                }
+              },
+              "y": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 59
+                }
+              }
+            }
+          }
         },
-        "Easy Animation / Bouncing Ball": {
-          "objects": {
-            "Ball": {
-              "props": {
-                "height": {
-                  "valueContainer": {
-                    "type": "BezierCurvesOfScalarValues",
-                    "points": [
-                      {
-                        "value": -1,
-                        "time": 2.5,
-                        "interpolationDescriptor": {
-                          "__descriptorType": "TimelinePointInterpolationDescriptor",
-                          "connected": true,
-                          "interpolationType": "CubicBezier",
-                          "handles": [
-                            0.34313519388312674,
-                            0.9264827892519698,
-                            0.2916679179995306,
-                            0.012749835681809957
-                          ]
-                        }
-                      },
-                      {
-                        "time": 726,
-                        "value": 2.06,
-                        "interpolationDescriptor": {
-                          "connected": true,
-                          "__descriptorType": "TimelinePointInterpolationDescriptor",
-                          "interpolationType": "CubicBezier",
-                          "handles": [
-                            0.3105276723309282,
-                            -0.022140628921797106,
-                            0.19202723704128377,
-                            0.8096145657949603
-                          ]
-                        }
-                      },
-                      {
-                        "time": 1456,
-                        "value": -1,
-                        "interpolationDescriptor": {
-                          "connected": false,
-                          "__descriptorType": "TimelinePointInterpolationDescriptor",
-                          "interpolationType": "CubicBezier",
-                          "handles": [
-                            0.5,
-                            0,
-                            0.5,
-                            0
-                          ]
-                        }
+        "duration": null
+      },
+      "Easy Animation / Bouncing Ball": {
+        "objects": {
+          "Ball": {
+            "props": {
+              "height": {
+                "valueContainer": {
+                  "type": "BezierCurvesOfScalarValues",
+                  "points": [
+                    {
+                      "value": -1.2,
+                      "time": 2.5,
+                      "interpolationDescriptor": {
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "connected": true,
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.21588364126875453,
+                          0.9632064046623338,
+                          0.2916679179995306,
+                          0.012749835681809957
+                        ]
                       }
-                    ]
-                  }
-                },
-                "squish": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 1
-                  }
+                    },
+                    {
+                      "time": 585,
+                      "value": 2,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.3105276723309282,
+                          -0.022140628921797106,
+                          0.14867085118846252,
+                          0.772864419449437
+                        ]
+                      }
+                    },
+                    {
+                      "time": 1202,
+                      "value": 0.001,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.3574632334868199,
+                          0.7111509073010494,
+                          0.5226411638619495,
+                          -0.0019442541538448044
+                        ]
+                      }
+                    },
+                    {
+                      "time": 1391.5302627203193,
+                      "value": -1.1881086764667357,
+                      "interpolationDescriptor": {
+                        "connected": false,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    }
+                  ]
                 }
-              }
-            },
-            "Light One": {
-              "props": {
-                "x": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 2
-                  }
-                },
-                "y": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": -15
-                  }
-                },
-                "z": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 1
-                  }
-                }
-              }
-            },
-            "Light Two": {
-              "props": {
-                "y": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 45
-                  }
-                },
-                "z": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 31
-                  }
-                },
-                "x": {
-                  "valueContainer": {
-                    "type": "StaticValueContainer",
-                    "value": 26
-                  }
+              },
+              "squish": {
+                "valueContainer": {
+                  "type": "BezierCurvesOfScalarValues",
+                  "points": [
+                    {
+                      "value": 0.9,
+                      "time": 0,
+                      "interpolationDescriptor": {
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "connected": true,
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 297.4878134330273,
+                      "value": 1.05,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.4776134738936897,
+                          0.7692307692307689
+                        ]
+                      }
+                    },
+                    {
+                      "time": 1300,
+                      "value": 1,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.4600232312998271,
+                          0.11223344556677878,
+                          0.15253068848959217,
+                          0.4938271604938276
+                        ]
+                      }
+                    },
+                    {
+                      "time": 1472,
+                      "value": 0.905,
+                      "interpolationDescriptor": {
+                        "connected": false,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    }
+                  ]
                 }
               }
             }
           },
-          "duration": 1458
-        }
+          "Light One": {
+            "props": {
+              "x": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 2
+                }
+              },
+              "y": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": -15
+                }
+              },
+              "z": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 1
+                }
+              }
+            }
+          },
+          "Light Two": {
+            "props": {
+              "y": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 45
+                }
+              },
+              "z": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 31
+                }
+              },
+              "x": {
+                "valueContainer": {
+                  "type": "StaticValueContainer",
+                  "value": 26
+                }
+              }
+            }
+          }
+        },
+        "duration": 1527.5
       }
     }
   }
+}

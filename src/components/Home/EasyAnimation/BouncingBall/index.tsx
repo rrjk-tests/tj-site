@@ -25,7 +25,7 @@ function Ball({ name, radius }: IBallProps) {
         <group>
             <mesh
                 position={new Vector3(0, height, 0)}
-                scale={new Vector3(1, squish, 1)}
+                scale={new Vector3(1/squish, squish, 1)}
             >
                 <sphereGeometry attach="geometry" args={[radius, 32, 32]} />
                 <meshPhongMaterial attach="material" />
