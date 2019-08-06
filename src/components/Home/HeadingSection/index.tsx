@@ -30,6 +30,7 @@ export default function HeadingSection() {
           alt="TheatreJS logo"
         />
         <SectionInfo
+          direction="center"
           className="heading-section__content"
           {...info}
         />

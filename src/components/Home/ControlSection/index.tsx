@@ -25,7 +25,7 @@ export default () => {
       <div className="control-section">
         <Dot top="-2rem" left="35%" />
         <SectionInfo
-          isRTL
+          direction="rtl"
           className="control-section__content"
           {...info}
         />

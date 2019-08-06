@@ -22,6 +22,7 @@ export default function GetAhead(){
           right={0}
         />
         <SectionInfo
+          direction="center"
           {...info}
         />
         <JoinUs />

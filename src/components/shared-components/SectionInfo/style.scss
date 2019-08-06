@@ -3,11 +3,26 @@
 .section-info {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  $section-info: section-info;
+
+  &--center {
+    align-items: center;
+    .#{$section-info} {
+      &__desc {
+        text-align: center;
+      }
+    }
+  }
+
   &--rtl {
     text-align: right;
-    align-items: flex-end;
 
-    .section-info {
+    .#{$section-info} {
       align-items: flex-end;
 
       &__glow {
@@ -39,5 +54,7 @@
     display: flex;
     flex-direction: column;
     font-style: italic;
+
+    width: 80%;
   }
 }

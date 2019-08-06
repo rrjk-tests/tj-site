@@ -20,7 +20,7 @@ export default function EasyAnimationSection() {
         <Dot type="white" />
         <Dot top="-10rem" left="40rem" />
         <SectionInfo
-          isRTL
+          direction="rtl"
           className="easy-animation-section__content"
           {...info}
         />
