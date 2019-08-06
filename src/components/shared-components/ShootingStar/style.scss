@@ -8,7 +8,7 @@
   transform: translate(-50%, 0);
 
   &--vertical {
-    transform: translate(50%, 0) rotate(-90deg) rotateX(180deg);
+    transform: translate(-50%, 0) rotate(-90deg) rotateX(180deg);
   }
   &--reversed {
     transform: translate(-50%, 0) rotate(-180deg) rotateX(180deg);
