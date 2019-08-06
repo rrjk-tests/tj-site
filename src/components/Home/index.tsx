@@ -7,7 +7,7 @@ import ControlSection from './ControlSection';
 import FluidSection from './FluidSection';
 import GetAhead from './GetAhead';
 import EasyAnimation from './EasyAnimation';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 export default function App(){
     return (
@@ -17,7 +17,7 @@ export default function App(){
             <FluidSection />
             <EasyAnimation />
             <GetAhead />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
