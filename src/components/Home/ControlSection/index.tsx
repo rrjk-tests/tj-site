@@ -12,6 +12,7 @@ import lineSVG from './line.svg';
 import Dot from '../../shared-components/Dot';
 import ControlBox from './ControlBox';
 import { TLControlBox } from '../../../shared/Theatre';
+import ShootingStar from '../../shared-components/ShootingStar';
 
 const { info } = sections.control;
 
@@ -24,6 +25,11 @@ export default () => {
     <Section line={lineSVG}>
       <div className="control-section">
         <Dot top="-2rem" left="35%" />
+        <ShootingStar
+          isVertical
+          left={28}
+          bottom={72}
+        />
         <SectionInfo
           direction="rtl"
           className="control-section__content"
