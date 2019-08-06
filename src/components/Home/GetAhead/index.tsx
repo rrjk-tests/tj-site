@@ -15,7 +15,9 @@ export default function GetAhead(){
   return (
     <Section>
       <div className="get-ahead">
-        <Dot top="24rem" left="53rem" />
+        <Dot bottom={-20} left="50%" />
+        <Dot bottom={-40} left="50%" />
+        <Dot bottom={-60} left="50%" />
         <SectionInfo
           direction="center"
           {...info}
