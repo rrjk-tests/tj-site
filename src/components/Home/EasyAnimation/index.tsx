@@ -17,8 +17,8 @@ export default function EasyAnimationSection() {
   return (
     <Section line={lineSVG}>
       <div className="easy-animation-section">
-        <Dot type="white" />
-        <Dot top="-10rem" left="40rem" />
+        <Dot bottom={0} left="45%" type="primary" />
+        <Dot top={0} type="tertiary" left={20} />
         <SectionInfo
           direction="rtl"
           className="easy-animation-section__content"

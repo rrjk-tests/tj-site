@@ -24,7 +24,7 @@ export default () => {
   return (
     <Section line={lineSVG}>
       <div className="control-section">
-        <Dot top="-2rem" left="35%" />
+        <Dot top="23%" left="38%" type="tertiary" />
         <ShootingStar
           isVertical
           left={28}

@@ -11,7 +11,6 @@ import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
 import ShootingStar from '../../shared-components/ShootingStar';
-import Dot from '../../shared-components/Dot';
 
 const { info, button } = sections.heading;
 
@@ -19,8 +18,6 @@ export default function HeadingSection() {
   return (
     <Section hasGlown line={lineSVG}>
       <div className="heading-section">
-        <Dot top="9rem" left="11rem" />
-        <Dot top="38rem" left="20rem" />
         <ShootingStar
           right={-70}
         />
