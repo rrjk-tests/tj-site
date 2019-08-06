@@ -21,6 +21,11 @@ interface IBallProps {
 function Ball({ name, radius }: IBallProps) {
     const { height, squish } = useTheatre(name, ['height', 'squish'], TLEasyAnimation)
 
+    useEffect(() => {
+        TLEasyAnimation.play({ iterationCount: Infinity })
+        return () => TLEasyAnimation.pause()
+    }, [])
+
     return (
         <group>
             <mesh
