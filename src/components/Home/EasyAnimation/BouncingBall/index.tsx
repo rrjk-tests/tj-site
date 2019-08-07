@@ -3,7 +3,7 @@ import { useTheatre } from '@theatre/hooks';
 import { Canvas } from 'react-three-fiber';
 
 import './style.scss';
-import { TLEasyAnimation } from '../../../../shared/Theatre';
+import { TLEasyAnimation, project } from '../../../../shared/Theatre';
 import { Vector3, Color, PerspectiveCamera, Euler } from 'three';
 import { ScrollContext } from './../../../../shared/ScrollBar';
 
@@ -22,7 +22,7 @@ function Ball({ name, radius }: IBallProps) {
     const { height, squish } = useTheatre(name, ['height', 'squish'], TLEasyAnimation)
 
     useEffect(() => {
-        TLEasyAnimation.play({ iterationCount: Infinity })
+        project.ready.then(() => TLEasyAnimation.play({ iterationCount: Infinity }))
         return () => TLEasyAnimation.pause()
     }, [])
 

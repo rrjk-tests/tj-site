@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTheatre } from '@theatre/hooks'
 
 import Section from '../../shared-components/Section';
@@ -12,7 +12,7 @@ import lineSVG from './line.svg';
 import Dot from '../../shared-components/Dot';
 import ControlBox from './ControlBox';
 import mobileLineSVG from './mobileLine.svg';
-import { TLControlBox } from '../../../shared/Theatre';
+import { TLControlBox, project } from '../../../shared/Theatre';
 import ShootingStar from '../../shared-components/ShootingStar';
 
 const { info } = sections.control;
@@ -21,6 +21,11 @@ export default () => {
   const keyframeOne = useTheatre('Keyframe One', ['time', 'value'], TLControlBox)
   const keyframeTwo = useTheatre('Keyframe Two', ['time', 'value'], TLControlBox)
   const cursor = useTheatre('cursor', ['x', 'y'], TLControlBox)
+
+  useEffect(() => {
+    project.ready.then(() => TLControlBox.play({ iterationCount: Infinity }))
+    return () => TLControlBox.pause();
+  }, [])
 
   return (
     <Section line={lineSVG} mobileLine={mobileLineSVG}>
