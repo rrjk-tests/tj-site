@@ -1,30 +1,14 @@
-<svg width="1440" height="3070" viewBox="0 0 1440 3070" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1191" y="1500" width="6" height="6" transform="rotate(-90 1191 1500)" fill="#402F7E" fill-opacity="0.8"/>
-<rect x="1048" y="1437" width="6" height="6" transform="rotate(-90 1048 1437)" fill="#402F7E"/>
-<rect x="1048" y="1531" width="6" height="6" transform="rotate(-90 1048 1531)" fill="#402F7E"/>
-<rect x="582" y="730" width="6" height="6" transform="rotate(-90 582 730)" fill="#402F7E"/>
-<rect x="243" y="987" width="6" height="6" transform="rotate(-90 243 987)" fill="#402F7E"/>
-<rect x="1194" y="1476" width="120" height="3" transform="rotate(-90 1194 1476)" fill="#302360" fill-opacity="0.9"/>
-<rect x="520" y="2129" width="6" height="6" transform="rotate(-90 520 2129)" fill="#E8294C"/>
-<rect x="295" y="1986" width="6" height="6" transform="rotate(-90 295 1986)" fill="#402F7E"/>
-<rect x="717" y="3030" width="6" height="6" transform="rotate(-90 717 3030)" fill="#E8294C"/>
-<rect x="717" y="3050" width="6" height="6" transform="rotate(-90 717 3050)" fill="#E8294C"/>
-<rect x="717" y="3070" width="6" height="6" transform="rotate(-90 717 3070)" fill="#E8294C"/>
-<rect x="1050" width="6" height="6" fill="#402F7E"/>
-<rect x="1074" width="120" height="3" fill="#302360" fill-opacity="0.9"/>
-<rect x="381" y="2" width="6" height="6" fill="#402F7E" fill-opacity="0.8"/>
-<rect x="243" y="2" width="120" height="3" fill="#302360" fill-opacity="0.9"/>
-<rect x="243" y="963" width="120" height="3" transform="rotate(-90 243 963)" fill="#302360" fill-opacity="0.9"/>
-<path d="M1489 1102C1123.5 1102 1150.5 1203.5 857 1203.5C563.5 1203.5 391 1102 229.5 1102C100 1102 60.5 1128.5 -64 1128.5" stroke="url(#paint0_radial)" stroke-width="2"/>
-<rect x="229" y="1102.14" width="16" height="16" transform="rotate(-45 229 1102.14)" fill="#2B366B"/>
-<rect x="819" y="1202.48" width="12" height="12" transform="rotate(-45 819 1202.48)" fill="#2B366B"/>
-<path d="M861 1203.5C1154.5 1203.5 1127.5 1102 1493 1102V1726.5H-60V1128.5C64.5 1128.5 104 1102 233.5 1102C395 1102 567.5 1203.5 861 1203.5Z" fill="url(#paint1_radial)" fill-opacity="0.8"/>
+<svg width="1440" height="637" viewBox="0 0 1440 637" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1489 12C1123.5 12 1150.5 113.5 857 113.5C563.5 113.5 391 12 229.5 12C100 12 60.5 38.5 -64 38.5" stroke="url(#paint0_radial)" stroke-width="2"/>
+<rect x="229" y="12.1426" width="16" height="16" transform="rotate(-45 229 12.1426)" fill="#2B366B"/>
+<rect x="819" y="112.484" width="12" height="12" transform="rotate(-45 819 112.484)" fill="#2B366B"/>
+<path d="M861 113.5C1154.5 113.5 1127.5 12 1493 12V636.5H-60V38.5C64.5 38.5 104 12 233.5 12C395 12 567.5 113.5 861 113.5Z" fill="url(#paint1_radial)" fill-opacity="0.8"/>
 <defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(727 1203.5) scale(703.5 27073.3)">
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(727 113.498) scale(703.5 27073.3)">
 <stop stop-color="#273264"/>
 <stop offset="1" stop-color="#0F0C1D"/>
 </radialGradient>
-<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(716.5 1149.76) rotate(90) scale(239.402 595.342)">
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(716.5 59.7595) rotate(90) scale(239.402 595.342)">
 <stop stop-color="#1C2F54" stop-opacity="0.45"/>
 <stop offset="1" stop-color="#0F0C1D"/>
 </radialGradient>

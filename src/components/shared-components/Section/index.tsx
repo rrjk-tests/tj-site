@@ -12,16 +12,17 @@ interface IProps {
 export default function Section({ line, children, hasGlown = false }: IProps) {
   const hasGlownModifier = hasGlown ? ' section--glown' : ''
   const hasLineModifier = !line ? ' section--without-line' : '';
+  console.log(line);
   return (
-    <section className={`section${hasGlownModifier}${hasLineModifier}`}>
+    <section style={{backgroundImage: `url(${line})`}} className={`section${hasGlownModifier}${hasLineModifier}`}>
       <div className="section__layout">
         { children }
       </div>
-      { line ? <Line
+      {/* { line ? <Line
         className="section__line"
         svg={line}
         alt='svg line'
-      /> : null}
+      /> : null} */}
     </section>
   );
 }

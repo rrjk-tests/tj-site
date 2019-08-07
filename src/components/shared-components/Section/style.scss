@@ -12,17 +12,24 @@
 
   position: relative;
 
-  padding-top: $global-margin * 5;
+  padding-top: $global-margin * 25;
+
+  padding-bottom: $global-padding * 8;
+
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-position-x: center;
 
   &--glown {
     background-image: radial-gradient(circle at 50% -100%, transparentize(#2B366B, 0.3), transparentize(#2B366B, 1) 70%);
   }
 
   &--without-line {
-    padding-bottom: $global-padding * 8;
+    padding-top: $global-padding * 5;
   }
 
   &__layout {
-    width: $layout-width;
+    width: 100%;
+    max-width: $layout-width;
   }
 }
