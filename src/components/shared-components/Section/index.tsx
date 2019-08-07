@@ -10,13 +10,6 @@ interface IProps {
   hasGlown?: boolean,
 }
 
-function chooseLine(line: string, mobileLine: string){
-  if(window.innerWidth >= 800) {
-    return line;
-  }
-  return mobileLine;
-}
-
 export default function Section({ line, mobileLine, children, hasGlown = false }: IProps) {
   const hasGlownModifier = hasGlown ? ' section--glown' : ''
   const hasLineModifier = !line && !mobileLine ? ' section--without-line' : '';
