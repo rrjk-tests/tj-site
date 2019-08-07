@@ -21,8 +21,10 @@ export default function Section({ line, mobileLine, children, hasGlown = false }
     window.addEventListener('resize', modifyWindowWidth)
     return () => window.removeEventListener('resize', modifyWindowWidth)
   });
+
+  const style = (line && mobileLine) ? {backgroundImage: `url(${innerWidth > 800 ? line : mobileLine})`} : {};
   return (
-    <section style={{backgroundImage: `url(${innerWidth > 800 ? line : mobileLine})`}} className={`section${hasGlownModifier}${hasLineModifier}`}>
+    <section style={style} className={`section${hasGlownModifier}${hasLineModifier}`}>
       <div className="section__layout">
         { children }
       </div>
