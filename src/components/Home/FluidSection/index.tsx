@@ -28,8 +28,8 @@ export default function FluidSection(){
           {...info}
         />
         <div className="fluid-section__actions">
-          <Dot top="6.5rem" type="tertiary" left="50%" />
-          <Dot top="14.5rem" type="tertiary" left="50%" />
+          <Dot top="7rem" type="tertiary" left="50%" />
+          <Dot top="16rem" type="tertiary" left="50%" />
           <Button
             text={clickMe}
           />
