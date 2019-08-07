@@ -32,4 +32,15 @@
     width: 100%;
     max-width: $layout-width;
   }
+
+  @media screen and (max-width: $mobile-width) {
+    padding-top: 15rem;
+
+    &--without-line {
+      padding-top: $global-padding * 5;
+    }
+
+    padding-right: $global-padding / 2;
+    padding-left: $global-padding / 2;
+  }
 }

@@ -11,6 +11,7 @@ import { sections } from '../../../locale/en';
 import lineSVG from './line.svg';
 import Dot from '../../shared-components/Dot';
 import ControlBox from './ControlBox';
+import mobileLineSVG from './mobileLine.svg';
 import { TLControlBox } from '../../../shared/Theatre';
 import ShootingStar from '../../shared-components/ShootingStar';
 
@@ -22,7 +23,7 @@ export default () => {
   const cursor = useTheatre('cursor', ['x', 'y'], TLControlBox)
 
   return (
-    <Section line={lineSVG}>
+    <Section line={lineSVG} mobileLine={mobileLineSVG}>
       <div className="control-section">
         <Dot top="23%" left="38%" type="tertiary" />
         <ShootingStar
