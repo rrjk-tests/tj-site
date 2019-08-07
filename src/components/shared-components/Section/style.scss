@@ -12,7 +12,7 @@
 
   position: relative;
 
-  padding-top: $global-margin * 25;
+  padding-top: $global-margin * 15;
 
   padding-bottom: $global-padding * 8;
 
@@ -21,7 +21,7 @@
   background-position-x: center;
 
   &--glown {
-    background-image: radial-gradient(circle at 50% -100%, transparentize(#2B366B, 0.3), transparentize(#2B366B, 1) 70%);
+    background-image: radial-gradient(circle at 50% -100%, rgba(68, 101, 165, 0.8), rgba(15, 12, 29, 0.8) 73%);
   }
 
   &--without-line {

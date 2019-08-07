@@ -2,8 +2,6 @@
 
 .button {
   $btn: button;
-
-  box-sizing: border-box;
   height: 5rem;
   
   padding: 0 $global-padding * 2;
@@ -15,9 +13,9 @@
   color: $text-color;
 
   border-width: 0;
-  box-sizing: border-box;
 
   min-width: 17.5rem;
+  box-sizing: content-box;
 
   cursor: pointer;
   transition-duration: $transition-duration;
@@ -30,6 +28,7 @@
 
   @media screen and (max-width: $mobile-width) {
     min-width: 25rem;
+    padding: ($global-padding / 2) ($global-padding / 2);    
   }
 
   &--loading {
@@ -54,10 +53,10 @@
     border-color: $primary-color;
 
     &:hover {
-      $darken-color: darken($primary-color, 10%);
+      $darken-color: darken($primary-color, 4%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.3);
+      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 

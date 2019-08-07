@@ -12,10 +12,11 @@
 
     max-width: 70rem;
 
-    margin-top: $global-margin * 5;
+    margin-top: $global-margin * 15;
   }
 
   &__action {
-    margin-top: $global-margin;
+    margin-top: $global-margin * 5;
+    margin-bottom: $global-margin * 7;
   }
 }

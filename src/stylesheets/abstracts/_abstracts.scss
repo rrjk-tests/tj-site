@@ -8,8 +8,8 @@ $text-font-size: 1.6rem;
 
 $bg-color: #0F0C1D;
 
-$primary-color: #E8294C;
-$primary-color-shadow: #F1284C;
+$primary-color: #ED3F3F;
+$primary-color-shadow: lighten($primary-color, 6%);
 $secondary-color: #f021c3;
 $tertiary-color: #402F7E;
 $fourth-color: #45aaf1;
