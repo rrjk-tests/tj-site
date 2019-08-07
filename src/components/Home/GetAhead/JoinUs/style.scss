@@ -8,6 +8,10 @@
     margin-top: $global-margin * 4;
     display: flex;
     position: relative;
+
+    @media screen and (max-width: $mobile-width) {
+      flex-direction: column;
+    }
   }
 
   &__input {
@@ -22,6 +26,13 @@
     &:active, &:focus {
       outline: none;
     }
+
+    @media screen and (max-width: $mobile-width) {
+      width: 100%;
+      max-width: none;
+
+      box-sizing: border-box;
+    }
   }
 
   &--loading {
@@ -30,6 +41,12 @@
 
   &__button {
     margin-left: -$global-margin * 4;
+
+    @media screen and (max-width: $mobile-width) {
+      margin-top: $global-margin * 2;
+      margin-left: 0;
+      align-self: center;
+    }
   }
 
   &__error {
@@ -41,5 +58,9 @@
     font-size: 1.3rem;
     text-shadow: 0 0 3px;
     letter-spacing: 0.04rem;
+
+    @media screen and (max-width: $mobile-width) {
+      top: 9rem;
+    }
   }
 }

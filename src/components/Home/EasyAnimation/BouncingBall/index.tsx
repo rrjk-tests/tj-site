@@ -76,7 +76,7 @@ export default function BouncingBall () {
     const scroll = useContext(ScrollContext)
 
     return (
-        <div className="BouncingBall">
+        <div className="bouncing-ball">
             <Canvas camera={camera}>
                 <group
                     rotation={new Euler(0.01, (scroll / 1000 * Math.PI), 0)}

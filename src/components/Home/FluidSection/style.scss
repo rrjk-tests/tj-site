@@ -1,9 +1,16 @@
+@import '../../../stylesheets/abstracts/index';
+
 .fluid-section {
   position: relative;
   display: flex;
   flex-direction: row;
 
   justify-content: space-between;
+
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   &__actions {
     position: relative;
@@ -12,6 +19,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 30rem;
+    min-width: 30rem;
+    height: 21.2rem;
+
+    @media screen and (max-width: $mobile-width) {
+      margin-top: $global-margin;
+    }
   }
 }

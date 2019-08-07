@@ -9,14 +9,13 @@ import SectionInfo from '../../shared-components/SectionInfo';
 
 import { sections } from '../../../locale/en';
 
-import lineSVG from './line.svg';
 import ShootingStar from '../../shared-components/ShootingStar';
 
 const { info, button } = sections.heading;
 
 export default function HeadingSection() {
   return (
-    <Section hasGlown line={lineSVG}>
+    <Section hasGlown>
       <div className="heading-section">
         <ShootingStar
           right={-70}
