@@ -1,5 +1,5 @@
 {
-    "revision": "8782a44e-66d9-4257-96c0-89c301a6adf2",
+    "revision": "fcadcac3-f483-42c7-99da-73ac9d616475",
     "definitionVersion": "0.1.0",
     "projectState": {
       "timelineTemplates": {
@@ -561,10 +561,10 @@
                           "connected": true,
                           "interpolationType": "CubicBezier",
                           "handles": [
-                            0.5,
+                            0.562513134009305,
                             0,
-                            0.5,
-                            0
+                            0.37254395765978415,
+                            0.001033950617283945
                           ]
                         }
                       },
@@ -917,6 +917,21 @@
                         "time": 17186.958093706446,
                         "value": -69,
                         "interpolationDescriptor": {
+                          "connected": true,
+                          "__descriptorType": "TimelinePointInterpolationDescriptor",
+                          "interpolationType": "CubicBezier",
+                          "handles": [
+                            0.5917362027571795,
+                            0.0872714260153883,
+                            0.4388033956469963,
+                            0.08918947933440696
+                          ]
+                        }
+                      },
+                      {
+                        "time": 18331.262020269947,
+                        "value": 0,
+                        "interpolationDescriptor": {
                           "connected": false,
                           "__descriptorType": "TimelinePointInterpolationDescriptor",
                           "interpolationType": "CubicBezier",
@@ -936,17 +951,17 @@
                     "type": "BezierCurvesOfScalarValues",
                     "points": [
                       {
-                        "value": 10,
+                        "value": -15,
                         "time": 0,
                         "interpolationDescriptor": {
                           "__descriptorType": "TimelinePointInterpolationDescriptor",
                           "connected": true,
                           "interpolationType": "CubicBezier",
                           "handles": [
-                            0.5,
-                            0,
-                            0.5,
-                            0
+                            0.6460493034415682,
+                            0.010377781464364855,
+                            0.38368591084154613,
+                            6.938893903907228e-18
                           ]
                         }
                       },
@@ -1299,6 +1314,21 @@
                         "time": 17186.958093706446,
                         "value": -30,
                         "interpolationDescriptor": {
+                          "connected": true,
+                          "__descriptorType": "TimelinePointInterpolationDescriptor",
+                          "interpolationType": "CubicBezier",
+                          "handles": [
+                            0.5993290697655744,
+                            0,
+                            0.24894883423133435,
+                            -0.06226668878618963
+                          ]
+                        }
+                      },
+                      {
+                        "time": 18318.66429703636,
+                        "value": -15,
+                        "interpolationDescriptor": {
                           "connected": false,
                           "__descriptorType": "TimelinePointInterpolationDescriptor",
                           "interpolationType": "CubicBezier",
@@ -1316,7 +1346,7 @@
               }
             }
           },
-          "duration": 18490
+          "duration": 18640
         },
         "Easy Animation / Bouncing Ball": {
           "objects": {
