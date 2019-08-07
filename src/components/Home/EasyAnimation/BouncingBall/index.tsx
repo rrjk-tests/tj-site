@@ -6,6 +6,7 @@ import './style.scss';
 import { TLEasyAnimation, project } from '../../../../shared/Theatre';
 import { Vector3, Color, PerspectiveCamera, Euler } from 'three';
 import { ScrollContext } from './../../../../shared/ScrollBar';
+import { useMobile } from '../../../../shared/useMobile';
 
 const primaryLightColor = new Color(0xF1284C);
 const secondaryLightColor = new Color(0xA61B66);
@@ -60,8 +61,9 @@ function Floor ({ width, height }: IFloorProps) {
 interface ILightProps {
     name: string
     color: Color
+    intensity?: number
 }
-function Light({ name, color }: ILightProps) {
+function Light({ name, color, intensity }: ILightProps) {
     const { x, y, z } = useTheatre(name, ['x', 'y', 'z'], TLEasyAnimation)
     const [positionVector, setPositionVector] = useState<Vector3>(new Vector3(0, 0, 0))
 
@@ -69,17 +71,21 @@ function Light({ name, color }: ILightProps) {
         setPositionVector(new Vector3(x, y, z))
     }, [x, y, z])
 
-    return (<pointLight position={positionVector} color={color} intensity={1} />)
+    return (<pointLight position={positionVector} color={color} intensity={intensity || 1} />)
 }
 
 export default function BouncingBall () {
     const scroll = useContext(ScrollContext)
 
+    const { isMobile } = useMobile()
+
+    const scrollRate = isMobile ? 700 : 1000
+
     return (
         <div className="bouncing-ball">
             <Canvas camera={camera}>
                 <group
-                    rotation={new Euler(0.01, (scroll / 1000 * Math.PI), 0)}
+                    rotation={new Euler(0.01, (scroll / scrollRate * Math.PI), 0)}
                 >
                     <Ball name="Ball" radius={1} />
                     <Floor width={4} height={4} />
