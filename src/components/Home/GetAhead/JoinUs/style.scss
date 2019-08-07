@@ -4,6 +4,12 @@
   width: 100%;
   position: relative;
   max-width: 50rem;
+
+  @media screen and (max-width: $mobile-width) {
+    padding: 0 4rem;
+    box-sizing: border-box;
+  }
+
   &__form {
     margin-top: $global-margin * 4;
     display: flex;
@@ -32,6 +38,9 @@
       max-width: none;
 
       box-sizing: border-box;
+      padding-right: $global-padding * 2;
+
+      height: 6rem;;
     }
   }
 
@@ -46,6 +55,8 @@
       margin-top: $global-margin * 2;
       margin-left: 0;
       align-self: center;
+
+      width: 100%;
     }
   }
 
@@ -60,7 +71,11 @@
     letter-spacing: 0.04rem;
 
     @media screen and (max-width: $mobile-width) {
-      top: 9rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: auto;
     }
   }
 }
