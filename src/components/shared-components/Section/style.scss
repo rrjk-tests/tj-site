@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
 
-  padding-bottom: $global-padding * 20;
+  padding-bottom: $global-padding * 25;
 
   position: relative;
 
@@ -24,16 +24,5 @@
 
   &__layout {
     width: $layout-width;
-  }
-
-  &__line {
-    bottom: 0;
-    position: absolute;
-    pointer-events: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -moz-user-drag: none;
-
-    z-index: 0;
   }
 }

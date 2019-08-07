@@ -1,5 +1,20 @@
 .line {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 20rem;
 
-  pointer-events: none;
+  &__img {
+    pointer-events: none;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+
+    z-index: 0;
+  }
 }

@@ -10,10 +10,12 @@ interface IProps {
 
 export default function Line({ svg, alt, className = '' }: IProps){
   return (
-    <img
-      className={`line ${className}`}
-      src={svg}
-      alt={alt}
-    />
+    <div className="line">
+      <img
+        className={`line__img ${className}`}
+        src={svg}
+        alt={alt}
+      />
+    </div>
   );
 }
