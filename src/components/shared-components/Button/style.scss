@@ -28,6 +28,10 @@
     outline: none;
   }
 
+  @media screen and (max-width: $mobile-width) {
+    min-width: 25rem;
+  }
+
   &--loading {
     cursor: wait;
     display: flex;
