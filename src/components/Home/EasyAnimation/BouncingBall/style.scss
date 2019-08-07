@@ -2,7 +2,8 @@
 
 .bouncing-ball {
     height: 60rem;
-    width: 45rem;
+    max-width: 45rem;
+    width: 100%;
     position: absolute;
     transform: translateY(-50%);
     left: 0;

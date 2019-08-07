@@ -1,3 +1,5 @@
+@import '../../../stylesheets/abstracts/index';
+
 .shooting-star {
   position: absolute;
   pointer-events: none;
@@ -6,6 +8,10 @@
   -moz-user-drag: none;
 
   transform: translate(-50%, 0);
+
+  @media screen and (max-width: $mobile-width) {
+    display: none;
+  }
 
   &--vertical {
     transform: translate(-50%, 0) rotate(-90deg) rotateX(180deg);

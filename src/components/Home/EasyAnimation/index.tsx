@@ -8,6 +8,7 @@ import SectionInfo from '../../shared-components/SectionInfo';
 import { sections } from '../../../locale/en';
 
 import lineSVG from './line.svg';
+import mobileLineSVG from './mobileLine.svg';
 import Dot from '../../shared-components/Dot';
 import BouncingBall from './BouncingBall';
 
@@ -15,7 +16,7 @@ const { info } = sections.easyAnimation;
 
 export default function EasyAnimationSection() {
   return (
-    <Section line={lineSVG}>
+    <Section line={lineSVG} mobileLine={mobileLineSVG}>
       <div className="easy-animation-section">
         <Dot bottom={0} left="45%" type="primary" />
         <Dot top={0} type="tertiary" left={20} />
