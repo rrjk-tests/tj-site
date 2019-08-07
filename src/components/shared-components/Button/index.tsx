@@ -4,7 +4,7 @@ import './style.scss';
 import Loading from '../Loading';
 
 interface IProps {
-  styleType?: 'primary' | 'secondary' | 'tertiary',
+  styleType?: 'primary' | 'secondary' | 'tertiary' | 'fourth',
   hasOutline?: boolean,
   text: string,
   onClick?: () => void | null,

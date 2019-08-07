@@ -87,6 +87,19 @@
     }
   }
 
+  &--fourth {
+    background-color: $fourth-color;
+    border-color: $fourth-color;
+    box-shadow: 0 .4rem .7rem transparentize($fourth-color, 0.6);
+
+    &:hover {
+      $darken-color: darken($fourth-color, 15%);
+      border-color: $darken-color;
+      background-color: $darken-color;
+      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
+    }
+  }
+
   &--outline {
     border-width: 0.2rem;
     border-style: solid;
