@@ -35,10 +35,12 @@ export default function FluidSection(){
           />
           <Button
             text={hoverMe}
+            styleType="secondary"
             hasOutline
           />
           <Button
             text={selectMe}
+            styleType="fourth"
             hasOutline
           />
         </div>
