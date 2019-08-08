@@ -33,7 +33,7 @@ export default function Button({ children, styleType = 'primary', isDisabled = f
       disabled={isDisabled}
       {...props}
     >
-      { loading ? <Loading /> : <span style={textStyle}>{text}</span> }
+      { loading ? <Loading /> : <span className="button--text" style={textStyle}>{text}</span> }
       {children}
     </button>
   );

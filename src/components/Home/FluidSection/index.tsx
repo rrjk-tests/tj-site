@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Section from '../../shared-components/Section';
 import SectionInfo from '../../shared-components/SectionInfo';
@@ -40,7 +40,7 @@ export function Clickable () {
       }}
       textStyle={{
         display: 'block',
-        transform: `scale(${textScale})`,
+        transform: `transform(-50%, -50%) scale(${textScale})`,
         textShadow: `0 0 ${shadowSize}px rgba(0, 0, 0, ${shadowAlpha})`
       }}
       text={clickMe}>
@@ -50,14 +50,37 @@ export function Clickable () {
 }
 
 export function Hoverable () {
-  const { scale } = useTheatre('Hoverable Button', ['scale'], TLHoverable);
+  const [hover, setHover] = useState(false)
+
+  const circleOne = useTheatre('CircleOne', ['marginLeft', 'marginTop', 'size', 'opacity'], TLHoverable);
+  const circleTwo = useTheatre('CircleTwo', ['marginLeft', 'marginTop', 'size', 'opacity'], TLHoverable);
+  const circleThree = useTheatre('CircleThree', ['marginLeft', 'marginTop', 'size', 'opacity'], TLHoverable);
+  const CircleFour = useTheatre('CircleFour', ['marginLeft', 'marginTop', 'size', 'opacity'], TLHoverable);
+
+  const onMouseEnter = () => {
+    setHover(true)
+    project.ready.then(() => TLHoverable.play())
+  }
+  const onMouseLeave = () => {
+    setHover(false)
+    setTimeout(() => TLHoverable.time = 0,200)
+  }
 
   return (
     <Button
+      className="Hoverable"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       text={hoverMe}
       styleType="secondary"
-      hasOutline
-    />
+      hasOutline>
+        <div className={"button--circles-container" + (hover ? " show" : "")}>
+          <div className="button--circle" style={{...circleOne, width: circleOne.size, height: circleOne.size}} />
+          <div className="button--circle" style={{...circleTwo, width: circleTwo.size, height: circleTwo.size}} />
+          <div className="button--circle" style={{...circleThree, width: circleThree.size, height: circleThree.size}} />
+          <div className="button--circle" style={{...CircleFour, width: CircleFour.size, height: CircleFour.size}} />
+        </div>
+    </Button>
   )
 }
 
