@@ -21,14 +21,19 @@ const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 export function Clickable () {
   const { scaleX, scaleY, opacity } = useTheatre('Button', ['scaleX', 'scaleY', 'opacity'], TLClickable);
   const { textScale, shadowSize, shadowAlpha } = useTheatre('Text', ['textScale', 'shadowSize', 'shadowAlpha'], TLClickable);
+  const circle = useTheatre('Circle', ['width', 'height', 'opacity'], TLClickable);
 
-  const onClick = () => {
+  const onMouseDown = () => {
+    project.ready.then(() => TLClickable.play({ range: {from: 0, to: 140}}))
+  }
+  const onMouseUp = () => {
     project.ready.then(() => TLClickable.play())
   }
 
   return (
     <Button
-      onClick={onClick}
+      onMouseDown={onMouseDown}
+      onMouseUp={onMouseUp}
       style={{
         transform: `scale(${scaleX}, ${scaleY}) translate(0px, 0px)`,
         opacity
@@ -38,7 +43,9 @@ export function Clickable () {
         transform: `scale(${textScale})`,
         textShadow: `0 0 ${shadowSize}px rgba(0, 0, 0, ${shadowAlpha})`
       }}
-      text={clickMe} />
+      text={clickMe}>
+        <div className="button--circle" style={circle} />
+      </Button>
   )
 }
 

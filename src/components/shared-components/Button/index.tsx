@@ -12,11 +12,12 @@ interface IProps {
   color?: string,
   loading?: boolean,
   isDisabled?: boolean,
-  textStyle?: any
+  textStyle?: any,
+  children?: JSX.Element[] | JSX.Element,
   [key: string]: any
 }
 
-export default function Button({ styleType = 'primary', isDisabled = false, textStyle = {}, hasOutline = false, text = '', type = 'button', className, color, loading = false, ...props }: IProps){
+export default function Button({ children, styleType = 'primary', isDisabled = false, textStyle = {}, hasOutline = false, text = '', type = 'button', className, color, loading = false, ...props }: IProps){
   let customStyle = {};
   if(hasOutline && color) customStyle = { borderColor: color };
   if(!hasOutline && color) customStyle = { backgroundColor: color };
@@ -33,6 +34,7 @@ export default function Button({ styleType = 'primary', isDisabled = false, text
       {...props}
     >
       { loading ? <Loading /> : <span style={textStyle}>{text}</span> }
+      {children}
     </button>
   );
 }
