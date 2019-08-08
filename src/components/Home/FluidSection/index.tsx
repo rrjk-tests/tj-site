@@ -86,12 +86,16 @@ export function Hoverable () {
 
 export function Selectable () {
 
+
   return (
     <Button
-      text={selectMe}
+      className="Selectable"
       styleType="fourth"
       hasOutline
-    />
+      text="Select me"
+    >
+      <div className="button--empty-checkbox"></div>
+    </Button>
   )
 }
 

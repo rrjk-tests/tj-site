@@ -6,7 +6,7 @@ import Loading from '../Loading';
 interface IProps {
   styleType?: 'primary' | 'secondary' | 'tertiary' | 'fourth',
   hasOutline?: boolean,
-  text: string,
+  text?: string,
   type?: "button" | "submit",
   className?: string,
   color?: string,
@@ -33,7 +33,7 @@ export default function Button({ children, styleType = 'primary', isDisabled = f
       disabled={isDisabled}
       {...props}
     >
-      { loading ? <Loading /> : <span className="button--text" style={textStyle}>{text}</span> }
+      { loading ? <Loading /> : (text ? <span className="button--text" style={textStyle}>{text}</span> : null) }
       {children}
     </button>
   );
