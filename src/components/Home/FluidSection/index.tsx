@@ -93,9 +93,7 @@ export function Selectable () {
       styleType="fourth"
       hasOutline
       text="Select me"
-    >
-      <div className="button--empty-checkbox"></div>
-    </Button>
+    />
   )
 }
 
