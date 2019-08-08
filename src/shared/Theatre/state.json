@@ -1,5 +1,5 @@
 {
-  "revision": "cf81a589-526e-4d98-8d4d-506d63e4a2b0",
+  "revision": "e0260c70-1395-4fb6-a203-2542842e85c6",
   "definitionVersion": "0.1.0",
   "projectState": {
     "timelineTemplates": {
@@ -2150,6 +2150,140 @@
                     {
                       "time": 492,
                       "value": -2,
+                      "interpolationDescriptor": {
+                        "connected": false,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "shadowSize": {
+                "valueContainer": {
+                  "type": "BezierCurvesOfScalarValues",
+                  "points": [
+                    {
+                      "value": 0,
+                      "time": 0,
+                      "interpolationDescriptor": {
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "connected": false,
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 602.7018456027266,
+                      "value": 0,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 729.422557117109,
+                      "value": 5,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 927.1767135985473,
+                      "value": 0,
+                      "interpolationDescriptor": {
+                        "connected": false,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "shadowAlpha": {
+                "valueContainer": {
+                  "type": "BezierCurvesOfScalarValues",
+                  "points": [
+                    {
+                      "value": 0,
+                      "time": 0,
+                      "interpolationDescriptor": {
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "connected": false,
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 602.7018456027266,
+                      "value": 0,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 727.2563911083162,
+                      "value": 0.6,
+                      "interpolationDescriptor": {
+                        "connected": true,
+                        "__descriptorType": "TimelinePointInterpolationDescriptor",
+                        "interpolationType": "CubicBezier",
+                        "handles": [
+                          0.5,
+                          0,
+                          0.5,
+                          0
+                        ]
+                      }
+                    },
+                    {
+                      "time": 927.1767135985473,
+                      "value": 0,
                       "interpolationDescriptor": {
                         "connected": false,
                         "__descriptorType": "TimelinePointInterpolationDescriptor",

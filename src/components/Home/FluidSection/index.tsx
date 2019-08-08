@@ -20,7 +20,7 @@ const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
 export function Clickable () {
   const { scaleX, scaleY, opacity } = useTheatre('Button', ['scaleX', 'scaleY', 'opacity'], TLClickable);
-  const { textScale, textX } = useTheatre('Text', ['textScale', 'textX'], TLClickable);
+  const { textScale, shadowSize, shadowAlpha } = useTheatre('Text', ['textScale', 'shadowSize', 'shadowAlpha'], TLClickable);
 
   const onClick = () => {
     project.ready.then(() => TLClickable.play())
@@ -35,7 +35,8 @@ export function Clickable () {
       }}
       textStyle={{
         display: 'block',
-        transform: `scale(${textScale}) translateX(${0}px)`
+        transform: `scale(${textScale})`,
+        textShadow: `0 0 ${shadowSize}px rgba(0, 0, 0, ${shadowAlpha})`
       }}
       text={clickMe} />
   )
