@@ -4,5 +4,5 @@ const uglyScrollOSes = ['windows']
 
 export const useScrollbarCheck = () => {
     const os = osName.toLowerCase()
-    return !uglyScrollOSes.includes(os)
+    return uglyScrollOSes.includes(os)
 }
