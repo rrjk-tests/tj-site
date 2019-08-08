@@ -7,15 +7,15 @@ interface IProps {
   styleType?: 'primary' | 'secondary' | 'tertiary' | 'fourth',
   hasOutline?: boolean,
   text: string,
-  onClick?: () => void | null,
   type?: "button" | "submit",
   className?: string,
   color?: string,
   loading?: boolean,
   isDisabled?: boolean,
+  [key: string]: any
 }
 
-export default function Button({ styleType = 'primary', isDisabled = false, hasOutline = false, text = '', type = 'button', className, color, loading = false, onClick = ()=>{} }: IProps){
+export default function Button({ styleType = 'primary', isDisabled = false, hasOutline = false, text = '', type = 'button', className, color, loading = false, ...props }: IProps){
   let customStyle = {};
   if(hasOutline && color) customStyle = { borderColor: color };
   if(!hasOutline && color) customStyle = { backgroundColor: color };
@@ -27,9 +27,9 @@ export default function Button({ styleType = 'primary', isDisabled = false, hasO
     <button
       style={customStyle}
       className={`button${outlineModifier}${styleModifier}${loadingModifier}${isDisabledModifier} ${className ? className : ''}`}
-      onClick={onClick}
       type={type}
       disabled={isDisabled}
+      {...props}
     >
       { loading ? <Loading /> : text }
     </button>

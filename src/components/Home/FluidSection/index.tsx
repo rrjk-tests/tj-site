@@ -21,7 +21,9 @@ export function Clickable () {
   const { scale } = useTheatre('Clickable Button', ['scale'], TLClickable);
 
   return (
-    <Button text={clickMe} />
+    <Button
+      onMouseDown={console.log}
+      text={clickMe} />
   )
 }
 
