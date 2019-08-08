@@ -14,15 +14,29 @@ import ShootingStar from '../../shared-components/ShootingStar';
 import Dot from '../../shared-components/Dot';
 import { useTheatre } from '@theatre/hooks';
 import { TLClickable, TLHoverable, TLSeletable } from '../../../shared/Theatre';
+import { project } from './../../../shared/Theatre/index';
 
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
 export function Clickable () {
-  const { scale } = useTheatre('Clickable Button', ['scale'], TLClickable);
+  const { scaleX, scaleY, opacity } = useTheatre('Button', ['scaleX', 'scaleY', 'opacity'], TLClickable);
+  const { textScale, textX } = useTheatre('Text', ['textScale', 'textX'], TLClickable);
+
+  const onClick = () => {
+    project.ready.then(() => TLClickable.play())
+  }
 
   return (
     <Button
-      onMouseDown={console.log}
+      onClick={onClick}
+      style={{
+        transform: `scale(${scaleX}, ${scaleY}) translate(0px, 0px)`,
+        opacity
+      }}
+      textStyle={{
+        display: 'block',
+        transform: `scale(${textScale}) translateX(${0}px)`
+      }}
       text={clickMe} />
   )
 }

@@ -12,10 +12,11 @@ interface IProps {
   color?: string,
   loading?: boolean,
   isDisabled?: boolean,
+  textStyle?: any
   [key: string]: any
 }
 
-export default function Button({ styleType = 'primary', isDisabled = false, hasOutline = false, text = '', type = 'button', className, color, loading = false, ...props }: IProps){
+export default function Button({ styleType = 'primary', isDisabled = false, textStyle = {}, hasOutline = false, text = '', type = 'button', className, color, loading = false, ...props }: IProps){
   let customStyle = {};
   if(hasOutline && color) customStyle = { borderColor: color };
   if(!hasOutline && color) customStyle = { backgroundColor: color };
@@ -31,7 +32,7 @@ export default function Button({ styleType = 'primary', isDisabled = false, hasO
       disabled={isDisabled}
       {...props}
     >
-      { loading ? <Loading /> : text }
+      { loading ? <Loading /> : <span style={textStyle}>{text}</span> }
     </button>
   );
 }

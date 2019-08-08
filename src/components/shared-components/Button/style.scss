@@ -18,7 +18,7 @@
   box-sizing: content-box;
 
   cursor: pointer;
-  transition-duration: $transition-duration;
+  transition: background $transition-duration, box-shadow $transition-duration;
 
   box-shadow: 0 .4rem .7rem transparentize($primary-color, 0.6);
 
