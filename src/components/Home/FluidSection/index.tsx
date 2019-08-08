@@ -12,10 +12,45 @@ import lineSVG from './line.svg';
 import mobileLineSVG from './mobileLine.svg';
 import ShootingStar from '../../shared-components/ShootingStar';
 import Dot from '../../shared-components/Dot';
+import { useTheatre } from '@theatre/hooks';
+import { TLClickable, TLHoverable, TLSeletable } from '../../../shared/Theatre';
 
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
 
+export function Clickable () {
+  const { scale } = useTheatre('Clickable Button', ['scale'], TLClickable);
+
+  return (
+    <Button text={clickMe} />
+  )
+}
+
+export function Hoverable () {
+  const { scale } = useTheatre('Hoverable Button', ['scale'], TLHoverable);
+
+  return (
+    <Button
+      text={hoverMe}
+      styleType="secondary"
+      hasOutline
+    />
+  )
+}
+
+export function Selectable () {
+  const { scale } = useTheatre('Selectable Button', ['scale'], TLSeletable);
+
+  return (
+    <Button
+      text={selectMe}
+      styleType="fourth"
+      hasOutline
+    />
+  )
+}
+
 export default function FluidSection(){
+
   return (
     <Section line={lineSVG} mobileLine={mobileLineSVG}>
       <div className="fluid-section">
@@ -30,19 +65,9 @@ export default function FluidSection(){
         <div className="fluid-section__actions">
           <Dot top="7rem" type="tertiary" left="50%" />
           <Dot top="16rem" type="tertiary" left="50%" />
-          <Button
-            text={clickMe}
-          />
-          <Button
-            text={hoverMe}
-            styleType="secondary"
-            hasOutline
-          />
-          <Button
-            text={selectMe}
-            styleType="fourth"
-            hasOutline
-          />
+          <Clickable />
+          <Hoverable />
+          <Selectable />
         </div>
       </div>
     </Section>
