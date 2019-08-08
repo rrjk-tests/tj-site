@@ -1,3 +1,5 @@
+@import '../../../stylesheets/abstracts/index';
+
 .get-ahead {
   position: relative;
 
@@ -5,6 +7,12 @@
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 18rem;
-  margin-top: 10rem;
+  padding-bottom: $global-padding * 18;
+  margin-top: $global-margin * 10;
+
+  @media screen and (max-width: $mobile-width) {
+    margin-top: 0;
+
+    padding-bottom: $global-padding * 2;
+  }
 }
