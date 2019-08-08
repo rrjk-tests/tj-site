@@ -13,7 +13,7 @@ import mobileLineSVG from './mobileLine.svg';
 import ShootingStar from '../../shared-components/ShootingStar';
 import Dot from '../../shared-components/Dot';
 import { useTheatre } from '@theatre/hooks';
-import { TLClickable, TLHoverable, TLSeletable } from '../../../shared/Theatre';
+import { TLClickable, TLHoverable } from '../../../shared/Theatre';
 import { project } from './../../../shared/Theatre/index';
 
 const { fluid: { info, buttons: { clickMe, hoverMe, selectMe } } } = sections;
@@ -85,7 +85,6 @@ export function Hoverable () {
 }
 
 export function Selectable () {
-  const { scale } = useTheatre('Selectable Button', ['scale'], TLSeletable);
 
   return (
     <Button
