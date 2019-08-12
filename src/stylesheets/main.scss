@@ -1,2 +1,50 @@
-@import './abstracts/index', 
-'./base/index';
+@import "./common";
+
+html,
+body,
+#root {
+  min-height: 100vh;
+
+  background-color: $bg-color;
+}
+
+*::selection {
+  background: $primary-color-shadow;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: calc(100% * 0.625);
+}
+
+body {
+  font-size: 1.6rem;
+
+  line-height: 1.8;
+
+  color: $text-color;
+  font-family: $text-font-family;
+}
+
+button,
+input {
+  font-family: $text-font-family;
+
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+
+  color: $heading-color;
+  font-family: $heading-font-family;
+}

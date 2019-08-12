@@ -1,12 +1,12 @@
-@import '../../../stylesheets/abstracts/index';
+@import "../../../stylesheets/common";
 
 .button {
   $btn: button;
   height: 5rem;
 
   position: relative;
-  
-  padding: 0 0;
+
+  padding: 0 22px;
 
   border-radius: $border-radius;
 
@@ -20,11 +20,13 @@
   box-sizing: content-box;
 
   cursor: pointer;
-  transition: background $transition-duration, box-shadow $transition-duration, border-color $transition-duration;
+  transition: background $transition-duration, box-shadow $transition-duration,
+    border-color $transition-duration;
 
-  box-shadow: 0 .4rem .7rem transparentize($primary-color, 0.6);
+  box-shadow: 0 0.4rem 0.7rem transparentize($primary-color, 0.6);
 
-  &:focus, &:active {
+  &:focus,
+  &:active {
     outline: none;
   }
 
@@ -39,7 +41,7 @@
 
   @media screen and (max-width: $mobile-width) {
     min-width: 20rem;
-    padding: ($global-padding / 2) 0;    
+    padding: ($global-padding / 2) 0;
   }
 
   &--loading {
@@ -67,46 +69,46 @@
       $darken-color: darken($primary-color, 4%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
+      box-shadow: 0 0.4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 
   &--secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
-    box-shadow: 0 .4rem .7rem transparentize($secondary-color, 0.6);
+    box-shadow: 0 0.4rem 0.7rem transparentize($secondary-color, 0.6);
 
     &:hover {
       $darken-color: darken($secondary-color, 5%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
+      box-shadow: 0 0.4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 
   &--tertiary {
     background-color: $tertiary-color;
     border-color: $tertiary-color;
-    box-shadow: 0 .4rem .7rem transparentize($tertiary-color, 0.6);
+    box-shadow: 0 0.4rem 0.7rem transparentize($tertiary-color, 0.6);
 
     &:hover {
       $darken-color: darken($tertiary-color, 15%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
+      box-shadow: 0 0.4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 
   &--fourth {
     background-color: $fourth-color;
     border-color: $fourth-color;
-    box-shadow: 0 .4rem .7rem transparentize($fourth-color, 0.6);
+    box-shadow: 0 0.4rem 0.7rem transparentize($fourth-color, 0.6);
 
     &:hover {
       $darken-color: darken($fourth-color, 15%);
       border-color: $darken-color;
       background-color: $darken-color;
-      box-shadow: 0 .4rem 1rem transparentize($darken-color, 0.5);
+      box-shadow: 0 0.4rem 1rem transparentize($darken-color, 0.5);
     }
   }
 

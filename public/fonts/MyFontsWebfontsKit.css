@@ -1,0 +1,33 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3795138, 2019-08-09T04:36:41-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Approach-XBlk by Emtype Foundry
+ * URL: https://www.myfonts.com/fonts/emtype/approach/extra-black/
+ * Copyright: Copyright (c) 2019 by Eduardo Manso. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3795138
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/39e8c2");
+
+@font-face {
+  font-family: "Approach-XBlk";
+  font-weight: 800;
+  src: url("webfonts/39E8C2_0_0.eot");
+  src: url("webfonts/39E8C2_0_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/39E8C2_0_0.woff2") format("woff2"),
+    url("webfonts/39E8C2_0_0.woff") format("woff"),
+    url("webfonts/39E8C2_0_0.ttf") format("truetype");
+}

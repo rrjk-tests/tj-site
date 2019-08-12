@@ -1,4 +1,4 @@
-@import '../../../stylesheets/abstracts/index';
+@import "../../../stylesheets/common";
 
 .section-info {
   position: relative;
@@ -40,14 +40,15 @@
   }
 
   &__title {
-    font-size: $heading-font-size;
+    font-size: 6.5rem;
 
     display: flex;
     flex-direction: column;
+    text-align: center;
+    letter-spacing: -2px;
+    font-weight: 800;
 
     @media screen and (max-width: $mobile-width) {
-      text-align: center;
-
       font-size: 5.6rem;
 
       max-width: 80%;
@@ -59,13 +60,12 @@
   &__desc {
     display: flex;
     flex-direction: column;
-    font-style: italic;
+    // font-style: italic;
 
     width: 80%;
 
     @media screen and (max-width: $mobile-width) {
       align-items: center;
-
       text-align: center;
     }
   }

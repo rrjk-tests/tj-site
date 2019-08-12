@@ -1,4 +1,4 @@
-@import '../../../stylesheets/abstracts/index';
+@import "../../../stylesheets/common";
 
 .section {
   width: 100%;
@@ -20,8 +20,12 @@
   background-position-y: 0;
   background-position-x: center;
 
-  &--glown {
-    background-image: radial-gradient(circle at 50% -100%, rgba(68, 101, 165, 0.8), rgba(15, 12, 29, 0.8) 73%);
+  &--glow {
+    background-image: radial-gradient(
+      circle at 50% -100%,
+      rgba(68, 101, 165, 0.8),
+      rgba(15, 12, 29, 0.8) 73%
+    );
   }
 
   &--without-line {

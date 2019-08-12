@@ -1,17 +1,17 @@
-import { useState, useEffect} from 'react';
+import {useState, useEffect} from "react"
 
 export const useMobile = () => {
-    const [innerWidth, setInnerWidth] = useState(window.innerWidth)
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
 
-    const modifyWindowWidth = () => setInnerWidth(window.innerWidth)
+  const modifyWindowWidth = () => setInnerWidth(window.innerWidth)
 
-    useEffect(()=>{
-        window.addEventListener('resize', modifyWindowWidth)
-        return () => window.removeEventListener('resize', modifyWindowWidth)
-    });
+  useEffect(() => {
+    window.addEventListener("resize", modifyWindowWidth)
+    return () => window.removeEventListener("resize", modifyWindowWidth)
+  })
 
-    return {
-        innerWidth,
-        isMobile: innerWidth < 800
-    }
+  return {
+    innerWidth,
+    isMobile: innerWidth < 800
+  }
 }

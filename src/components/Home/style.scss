@@ -1,9 +1,8 @@
-@import '../../stylesheets/abstracts/index';
+@import "../../stylesheets/common";
 
 .app {
   width: 100%;
   min-height: 100vh;
-
   padding-bottom: 8rem;
 
   @media screen and (max-width: $mobile-width) {

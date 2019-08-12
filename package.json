@@ -3,7 +3,6 @@
   "description": "TheatreJS Website",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "@theatre/hooks": "^0.3.2",
     "@types/jest": "24.0.15",

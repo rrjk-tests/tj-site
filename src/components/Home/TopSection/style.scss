@@ -1,0 +1,22 @@
+@import '../../../stylesheets/common';
+
+.heading-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 70rem;
+
+    margin-top: $global-margin * 15;
+  }
+
+  &__action {
+    margin-top: $global-margin * 5;
+    margin-bottom: $global-margin * 7;
+  }
+}

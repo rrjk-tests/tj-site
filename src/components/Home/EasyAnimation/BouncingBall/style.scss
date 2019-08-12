@@ -1,20 +1,20 @@
-@import '../../../../stylesheets/abstracts/index';
+@import "../../../../stylesheets/common";
 
 .bouncing-ball {
-    height: 60rem;
-    max-width: 45rem;
-    width: 100%;
-    position: absolute;
-    transform: translateY(-50%);
-    left: 0;
-    top: 50%;
+  height: 60rem;
+  max-width: 45rem;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  top: 50%;
 
-    @media screen and (max-width: $mobile-width) {
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: auto;
-        transform: translateY(0);
-    }
+  @media screen and (max-width: $mobile-width) {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: auto;
+    transform: translateY(0);
+  }
 }
