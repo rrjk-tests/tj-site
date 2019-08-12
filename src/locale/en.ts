@@ -32,7 +32,7 @@ export const sections = {
   },
   easyAnimation: {
     info: {
-      title: ["Animate in 2D and 3D"],
+      title: ["2D and 3D"],
       description: [
         "Theatre animates all JS variables. Use it to animate HTML, SVG, WebGL, THREE.js, Pixie.js, or your personal graphics library."
       ]

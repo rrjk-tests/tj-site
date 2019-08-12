@@ -13,6 +13,10 @@
     max-width: 70rem;
 
     margin-top: $global-margin * 15;
+
+    & .section-content__title {
+      font-size: 7.6rem;
+    }
   }
 
   &__action {

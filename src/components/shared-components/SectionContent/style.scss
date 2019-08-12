@@ -1,6 +1,6 @@
 @import "../../../stylesheets/common";
 
-.section-info {
+.section-content {
   position: relative;
 
   display: flex;
@@ -8,34 +8,22 @@
 
   width: 100%;
 
-  $section-info: section-info;
-
   @media screen and (max-width: $mobile-width) {
     align-items: center;
   }
 
   &--center {
     align-items: center;
-    .#{$section-info} {
-      &__desc {
-        text-align: center;
-      }
-    }
+    text-align: center;
   }
 
   &--right-aligned {
     text-align: right;
+    align-items: flex-end;
 
     @media screen and (max-width: $mobile-width) {
       text-align: center;
-    }
-
-    .#{$section-info} {
-      align-items: flex-end;
-
-      @media screen and (max-width: $mobile-width) {
-        align-items: center;
-      }
+      align-items: center;
     }
   }
 
@@ -44,7 +32,6 @@
 
     display: flex;
     flex-direction: column;
-    text-align: center;
     letter-spacing: -2px;
     font-weight: 800;
 

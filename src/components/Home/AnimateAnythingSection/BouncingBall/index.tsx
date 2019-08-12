@@ -5,7 +5,7 @@ import {Canvas} from "react-three-fiber"
 import "./style.scss"
 import {TLEasyAnimation, project} from "../../../../shared/Theatre"
 import {Vector3, Color, PerspectiveCamera, Euler} from "three"
-import {ScrollContext} from "./../../../../shared/ScrollBar"
+import {ScrollContext} from "../../../../shared/ScrollBar"
 import {useMobile} from "../../../../shared/useMobile"
 
 const primaryLightColor = new Color(0xf1284c)

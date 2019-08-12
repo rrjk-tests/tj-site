@@ -1,11 +1,8 @@
 import React from "react"
 import Section from "../../shared-components/Section"
-
 import "./style.scss"
 import SectionContent from "../../shared-components/SectionContent"
-
 import {sections} from "../../../locale/en"
-
 import lineSVG from "./line.svg"
 import mobileLineSVG from "./mobileLine.svg"
 import Dot from "../../shared-components/Dot"
@@ -14,7 +11,7 @@ import {useMobile} from "../../../shared/useMobile"
 
 const {info} = sections.easyAnimation
 
-export default function EasyAnimationSection() {
+export default function AnimateAnythingSection() {
   const {isMobile} = useMobile()
 
   return (

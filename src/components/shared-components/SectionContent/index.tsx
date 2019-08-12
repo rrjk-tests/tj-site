@@ -15,13 +15,13 @@ export default function SectionContent({
   addtitionalClassname: className = "",
   contentAlignment: direction = "left-aligned"
 }: IProps) {
-  const directionModifier = `section-info--${direction}`
+  const directionModifier = `section-content--${direction}`
   return (
-    <div className={`section-info ${directionModifier} ${className}`}>
-      <h2 className="section-info__title">
+    <div className={`section-content ${directionModifier} ${className}`}>
+      <h2 className="section-content__title">
         <StringsToSpans text={title} />
       </h2>
-      <p className="section-info__desc">
+      <p className="section-content__desc">
         <StringsToSpans text={description} />
       </p>
     </div>
