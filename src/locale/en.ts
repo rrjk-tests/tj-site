@@ -1,4 +1,4 @@
-export const sections: TSections = {
+export const sections = {
   heading: {
     info: {
       title: ["Motion Design,", "for the web"],
@@ -51,7 +51,7 @@ export const sections: TSections = {
   }
 }
 
-export const footerSections: TFooterSections = [
+export const footerSections = [
   {
     title: "Title Here1",
     description:

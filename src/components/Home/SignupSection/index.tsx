@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../../shared-components/Section';
-import SectionInfo from '../../shared-components/SectionInfo';
+import SectionContent from '../../shared-components/SectionContent';
 
 import JoinUs from './JoinUs';
 
@@ -13,15 +13,15 @@ import Dot from '../../shared-components/Dot';
 
 const { getAhead: { info } } = sections;
 
-export default function GetAhead(){
+export default function SignupSection(){
   return (
     <Section line={lineSVG} mobileLine={mobileLineSVG}>
-      <div className="get-ahead">
+      <div className="signup-section">
         <Dot bottom={-20} left="50%" />
         <Dot bottom={-40} left="50%" />
         <Dot bottom={-60} left="50%" />
-        <SectionInfo
-          direction="center"
+        <SectionContent
+          contentAlignment="center"
           {...info}
         />
         <JoinUs />

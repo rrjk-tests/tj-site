@@ -1,9 +1,8 @@
 import React from "react"
-
 import Section from "../../shared-components/Section"
 
 import "./style.scss"
-import SectionInfo from "../../shared-components/SectionInfo"
+import SectionContent from "../../shared-components/SectionContent"
 
 import {sections} from "../../../locale/en"
 
@@ -23,9 +22,9 @@ export default function EasyAnimationSection() {
       <div className="easy-animation-section">
         {!isMobile ? <Dot bottom={0} left="45%" type="primary" /> : null}
         <Dot top={0} type="tertiary" left={20} />
-        <SectionInfo
-          direction="rtl"
-          className="easy-animation-section__content"
+        <SectionContent
+          contentAlignment="right-aligned"
+          addtitionalClassname="easy-animation-section__content"
           {...info}
         />
         <BouncingBall />

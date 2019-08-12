@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Section from '../../shared-components/Section';
-import SectionInfo from '../../shared-components/SectionInfo';
+import SectionContent from '../../shared-components/SectionContent';
 import Button from '../../shared-components/Button';
 
 import './style.scss';
@@ -107,7 +107,7 @@ export default function FluidSection(){
           right={-135}
           top={62}
         />
-        <SectionInfo
+        <SectionContent
           {...info}
         />
         <div className="fluid-section__actions">

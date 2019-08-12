@@ -1,21 +1,19 @@
 import React from "react"
-
-import StringsToSpans from "../../shared-components/StringsToSpans"
-
+import StringsToSpans from "../StringsToSpans"
 import "./style.scss"
 
 interface IProps {
   title?: string[]
   description?: string[]
-  className?: string
-  direction?: "rtl" | "ltr" | "center"
+  addtitionalClassname?: string
+  contentAlignment?: "right-aligned" | "left-aligned" | "center"
 }
 
-export default function SectionInfo({
+export default function SectionContent({
   title = [],
   description = [],
-  className = "",
-  direction = "ltr"
+  addtitionalClassname: className = "",
+  contentAlignment: direction = "left-aligned"
 }: IProps) {
   const directionModifier = `section-info--${direction}`
   return (

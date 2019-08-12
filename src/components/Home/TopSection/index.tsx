@@ -6,7 +6,7 @@ import Section from "../../shared-components/Section"
 
 import logo from "./logo.svg"
 import "./style.scss"
-import SectionInfo from "../../shared-components/SectionInfo"
+import SectionContent from "../../shared-components/SectionContent"
 
 import {sections} from "../../../locale/en"
 
@@ -20,9 +20,9 @@ const $ = (query: string) => document.querySelector(query)
 export default function TopSection() {
   const haveUglyScroll = useScrollbarCheck()
 
-  const scrollToGetAhead = () => {
+  const scrollToLastSection = () => {
     let element
-    const desiredElement = $(".get-ahead") as HTMLElement
+    const desiredElement = $(".signup-section") as HTMLElement
     if (!desiredElement) return
     if (haveUglyScroll) {
       const appEl = $(".app")
@@ -44,17 +44,17 @@ export default function TopSection() {
 
   return (
     <Section hasGlow>
-      <div className="heading-section">
+      <div className="top-section">
         <ShootingStar right={-70} />
         <ShootingStar isReversed left={72} />
-        <img className="heading-section__logo" src={logo} alt="Theatre.js" />
-        <SectionInfo
-          direction="center"
-          className="heading-section__content"
+        <img className="top-section__logo" src={logo} alt="Theatre.js" />
+        <SectionContent
+          contentAlignment="center"
+          addtitionalClassname="top-section__content"
           {...info}
         />
-        <div className="heading-section__action">
-          <Button onClick={scrollToGetAhead} text={button} />
+        <div className="top-section__action">
+          <Button onClick={scrollToLastSection} text={button} />
         </div>
       </div>
     </Section>
