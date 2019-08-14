@@ -157,11 +157,9 @@ export default function MicroInteractionsSection() {
         <ShootingStar isVertical right={-135} top={62} />
         <SectionContent {...info} />
         <div className="fluid-section__actions">
-          <Dot top="7rem" type="tertiary" left="50%" />
-          <Dot top="16rem" type="tertiary" left="50%" />
           <Clickable />
+          <Dot top="7rem" type="tertiary" left="50%" />
           <Hoverable />
-          <Selectable />
         </div>
       </div>
     </Section>

@@ -42,7 +42,7 @@ export const sections = {
   getAhead: {
     info: {
       title: ["Get early access"],
-      description: [""]
+      description: ["Join us as we build"]
     },
     subscribe: {
       placeholder: "Your email",
@@ -55,21 +55,21 @@ export const footerSections = [
   {
     title: "Title Here1",
     description:
-      "The reason why businesses make use of mission statements is to make it."
+      "ss"
   },
   {
-    title: "Title Here2",
+    title: "",
     description:
-      "The reason why businesses make use of mission statements is to make it."
+      ""
   },
   {
-    title: "Title Here3",
+    title: "",
     description:
-      "The reason why businesses make use of mission statements is to make it."
+      ""
   },
   {
-    title: "Title Here4",
+    title: "",
     description:
-      "The reason why businesses make use of mission statements is to make it."
+      ""
   }
 ]

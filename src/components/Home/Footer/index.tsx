@@ -1,23 +1,19 @@
 import React from "react"
-
 import "./style.scss"
-
-import FooterColumn from "./FooterColumn"
-
-import {footerSections} from "../../../locale/en"
+import logo from "./logo.svg"
 
 export default function Footer() {
-  const footerColumns = footerSections.map(item => (
-    <FooterColumn
-      key={item.title}
-      title={item.title}
-      description={item.description}
-    />
-  ))
-
   return (
     <footer className="footer">
-      <div className="footer__layout">{footerColumns}</div>
+      <div className="footer__layout">
+        <img src={logo} />
+      </div>
     </footer>
   )
 }
+
+/**
+ * Theatre.js
+ * © Copyright 2018, TheaterJS Oy
+ * Contact
+ */
