@@ -25,7 +25,7 @@
     "react-three-fiber": "^2.2.14",
     "svg-path-generator": "^1.1.0",
     "theatre": "^0.2.0-dev.3",
-    "three": "^0.107.0",
+    "three": "^0.125.0",
     "typescript": "3.5.2",
     "use-http": "^0.1.79"
   },
